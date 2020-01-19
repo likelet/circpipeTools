@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a431dbf-f5df-4647-ad1d-36b2d2038459" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/BEDreader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/GTFreader.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/GTFreader.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/CircpipeTools.class" afterPath="$PROJECT_DIR$/target/classes/CircpipeTools.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PublicMethod/Gene.class" afterPath="$PROJECT_DIR$/target/classes/PublicMethod/Gene.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PublicMethod/ToolsforCMD.class" afterPath="$PROJECT_DIR$/target/classes/PublicMethod/ToolsforCMD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CircpipeTools.java" afterPath="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/GTFterm.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/GTFterm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/Gene.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/Gene.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" afterPath="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,12 +86,12 @@
       <file leaf-file-name="AnnotateCircRNA.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="75" column="73" lean-forward="false" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="73" />
+            <state relative-caret-position="289">
+              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#829#846#0" expanded="true" />
-                <element signature="e#1960#1977#0" expanded="true" />
+                <element signature="e#2180#2197#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -993,7 +977,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38161108" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38161108" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15351562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1450,12 +1434,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="75" column="73" lean-forward="false" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="73" />
+        <state relative-caret-position="289">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#829#846#0" expanded="true" />
-            <element signature="e#1960#1977#0" expanded="true" />
+            <element signature="e#2180#2197#0" expanded="true" />
           </folding>
         </state>
       </provider>

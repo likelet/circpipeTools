@@ -37,21 +37,25 @@ public class AnnotateCircRNA {
         //left pos
         // +1 if input are bed format
         int start=circlebed.getStart()+1;
-        int end= circlebed.getStart()+2;
-        if(chr.getGeneTree().find(start,end)!=null){
+        int end= circlebed.getStart()+20;
+        if(chr.getGeneTree().minOverlapper(start,end)!=null){
             Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
-            annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
+            if(annoteGeneLeft.getExonTreeNew().minOverlapper(start,end)!=null){
+                annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
+            }
         }
 
 
         //right pos
         // +1 if input are bed format
         start=circlebed.getEnd()+1;
-        end= circlebed.getEnd()+2;
+        end= circlebed.getEnd()+20;
 
-        if(chr.getGeneTree().find(start,end)!=null){
-            Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
-            annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
+        if(chr.getGeneTree().minOverlapper(start,end)!=null){
+            Gene annoteGeneRight=chr.getGeneTree().minOverlapper(start,end).getValue();
+            if(annoteGeneRight.getExonTreeNew().minOverlapper(start,end)!=null){
+                annoteExonRight=annoteGeneRight.getExonTreeNew().minOverlapper(start,end).getValue();
+            }
         }
 
 
@@ -70,20 +74,26 @@ public class AnnotateCircRNA {
         //left pos
         // +1 if input are bed format
         int start=circlebed.getStart();
-        int end= circlebed.getStart();
+        int end= circlebed.getStart()+1;
 
         if(chr.getGeneTree().minOverlapper(start,end)!=null){
             Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
-            annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
+            if(annoteGeneLeft.getExonTreeNew().minOverlapper(start,end)!=null){
+                annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
+            }
         }
+
 
         //right pos
         // +1 if input are bed format
         start=circlebed.getEnd();
-        end= circlebed.getEnd();
-        if(chr.getGeneTree().find(start,end)!=null){
-            Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
-            annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
+        end= circlebed.getEnd()+1;
+
+        if(chr.getGeneTree().minOverlapper(start,end)!=null){
+            Gene annoteGeneRight=chr.getGeneTree().minOverlapper(start,end).getValue();
+            if(annoteGeneRight.getExonTreeNew().minOverlapper(start,end)!=null){
+                annoteExonRight=annoteGeneRight.getExonTreeNew().minOverlapper(start,end).getValue();
+            }
         }
 
 
