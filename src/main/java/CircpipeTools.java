@@ -26,10 +26,16 @@ public class CircpipeTools {
 		boolean comm=false;
 		boolean merge=false;
 		boolean cds_first=true;
-                
+
+		// GLOABLE parameters
+        if (FunctionClass.isContainParameter(args, "-gff")) {
+            ToolsforCMD.GTF_SPILT = "=";
+        }
+
+
                 //help message
                 if (args.length==0||FunctionClass.isContainParameter(args,"-h")) {
-				String help =ToolsforCMD.print_ansi_CYAN("circTools: a kit for circRNA manipulating.\n")
+				String help =ToolsforCMD.print_ansi_CYAN("circTools: a kit for circRNA data manipulating .\n")
                         +ToolsforCMD.print_ansi_YELLOW("Parameter definition:\n") +
                         "\t-dir\t input file folder (default in current dir )\n" +
                         "\t-i\tjunction file(s) suffifx (*.bed forexample )\n\t-o\toutput junction prefix\n\t-d\tdupliction deviation\n\n" +

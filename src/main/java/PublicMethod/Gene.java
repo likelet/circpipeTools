@@ -14,6 +14,16 @@ public class Gene {
 	private int end=0;
 	private ArrayList<Transcript> scripts=null;
 	private Chromosome chr=null;
+	private String allstring="";
+	private IntervalTree<GTFterm> exonTree=new IntervalTree<GTFterm>();
+
+	public Gene(String id, int start,int end, String allstring){
+		this.id=id;
+		this.start=start;
+		this.end=end;
+		this.allstring=allstring;
+	}
+
 	public Gene(String id, String symbol, char strand, int start, int end, ArrayList<Transcript> scripts,
 			Chromosome chr) {
 		super();
@@ -61,7 +71,7 @@ public class Gene {
 	public void setScripts(ArrayList<Transcript> scripts) {
 		this.scripts = scripts;
 	}
-	
+
 	public Chromosome getChr() {
 		return chr;
 	}
@@ -130,5 +140,19 @@ public class Gene {
 			}
 		}
 		return out;
+	}
+
+	public String getAllstring(){
+		return(this.allstring);
+	}
+
+	public void AddExon(GTFterm gtfterm){
+		if(gtfterm!=null){
+			exonTree.put(gtfterm.getStart(),gtfterm.getEnd(),gtfterm);
+		}
+	}
+
+	public IntervalTree<GTFterm> getExonTreeNew(){
+		return(this.exonTree);
 	}
 }

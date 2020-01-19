@@ -10,7 +10,7 @@ public class Bed6P {
     private String name = null;
     private double score = 0.0;
     private char strand = ' ';
-    private ArrayList<Integer> support = null;
+    private ArrayList<Integer> support = new ArrayList<>();
 
     public Bed6P() {
         this.support = new ArrayList<>();
@@ -24,8 +24,23 @@ public class Bed6P {
         this.name = name;
         this.score = score;
         this.strand = strand;
+
         this.support = support;
     }
+    public Bed6P(String str) {
+        String [] element = str.split("\t");
+        this.chr = element[0];
+        this.start = Integer.parseInt(element[1]);
+        this.end = Integer.parseInt(element[2]);
+        this.name = element[3];
+        this.score = Double.parseDouble(element[4]);
+        this.strand = element[5].charAt(0);
+
+    }
+
+
+
+
 
     public String getChr() {
         return chr;
