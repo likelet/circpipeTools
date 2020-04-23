@@ -11,9 +11,22 @@ public class Bed6P {
     private double score = 0.0;
     private char strand = ' ';
     private ArrayList<Integer> support = new ArrayList<>();
+    public int dev=5;//用来判断circRNA是否重复
 
     public Bed6P() {
-        this.support = new ArrayList<>();
+    }
+
+    public Bed6P(String chr, int start, int end) {
+        this.chr = chr;
+        this.start = start;
+        this.end = end;
+    }
+
+    public Bed6P(String chr, int start, int end, String name) {
+        this.chr = chr;
+        this.start = start;
+        this.end = end;
+        this.name = name;
     }
 
     public Bed6P(String chr, int start, int end, String name, double score, char strand, ArrayList<Integer> support) {
@@ -156,5 +169,38 @@ public class Bed6P {
             out.append(0);
         }
         return out.toString();
+    }
+
+    //set overlap situation
+
+//    @Override
+    public int hashCode() {
+        // TODO Auto-generated method stub
+
+
+        return 1;
+
+    }
+
+
+
+    @Override
+    public boolean equals(Object obj) {
+
+        if((obj instanceof Bed6P)){
+            Bed6P bedcir = (Bed6P)obj;
+            if(this.getChr() !=bedcir.getChr()) {
+                return false;
+//            }else if(Math.abs(this.getStart()-bedcir.getStart())<=dev & Math.abs(this.getEnd()-bedcir.getEnd())<=dev ){
+//                System.out.println(Math.abs(this.getStart()-bedcir.getStart())+"\t"+ Math.abs(this.getEnd()-bedcir.getEnd()));
+//                return true;
+            }else if(this.getName()== bedcir.getName()){
+                System.out.println(Math.abs(this.getStart()-bedcir.getStart())+"\t"+ Math.abs(this.getEnd()-bedcir.getEnd()));
+                return true;
+            }
+        }
+        return false;
+
+
     }
 }

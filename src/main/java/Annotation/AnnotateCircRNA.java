@@ -110,34 +110,33 @@ public class AnnotateCircRNA {
         if(annoteExonLeft==null && annoteExonRight==null ){
             return "All intergenic";
         }else if (annoteExonLeft==null){
-            cot =new circAnnoteOut(
-                    annoteExonRight.getSpecificAttrbute("gene_id"),
-                    annoteExonRight.getSpecificAttrbute("transcript_id"),
-                    annoteExonRight.getSpecificAttrbute("exon_number"),
-                    annoteExonRight.getStart(),
-                    annoteExonRight.getEnd(),true
-            );
+            cot =new circAnnoteOut();
+            cot.setRight_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
+            cot.setRight_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
+            cot.setRight_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
+            cot.setRight_exon_start(annoteExonRight.getStart());
+            cot.setRight_exon_end(annoteExonRight.getEnd());
+
         }else if (annoteExonRight ==null){
-            cot=new circAnnoteOut(
-                    annoteExonRight.getSpecificAttrbute("gene_id"),
-                    annoteExonRight.getSpecificAttrbute("transcript_id"),
-                    annoteExonRight.getSpecificAttrbute("exon_number"),
-                    annoteExonRight.getStart(),
-                    annoteExonRight.getEnd(),true
-            );
+            cot=new circAnnoteOut();
+            cot.setLeft_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
+            cot.setLeft_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
+            cot.setLeft_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
+            cot.setLeft_exon_start(annoteExonRight.getStart());
+            cot.setLeft_exon_end(annoteExonRight.getEnd());
         }else {
 
-            cot = new circAnnoteOut(annoteExonLeft.getSpecificAttrbute("gene_id"),
-                    annoteExonLeft.getSpecificAttrbute("transcript_id"),
-                    annoteExonLeft.getSpecificAttrbute("exon_number"),
-                    annoteExonLeft.getStart(),
-                    annoteExonLeft.getEnd(),
-                    annoteExonRight.getSpecificAttrbute("gene_id"),
-                    annoteExonRight.getSpecificAttrbute("transcript_id"),
-                    annoteExonRight.getSpecificAttrbute("exon_number"),
-                    annoteExonRight.getStart(),
-                    annoteExonRight.getEnd()
-            );
+            cot = new circAnnoteOut();
+            cot.setRight_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
+            cot.setRight_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
+            cot.setRight_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
+            cot.setRight_exon_start(annoteExonRight.getStart());
+            cot.setRight_exon_end(annoteExonRight.getEnd());
+            cot.setLeft_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
+            cot.setLeft_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
+            cot.setLeft_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
+            cot.setLeft_exon_start(annoteExonRight.getStart());
+            cot.setLeft_exon_end(annoteExonRight.getEnd());
         }
         return cot.toString();
     }

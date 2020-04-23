@@ -197,6 +197,9 @@ public class Check {
 		ArrayList<String> out = this.bedTreeToString(check_map, header.toString(), files.size() + merged);
 		Method.writeFile(out_file, out);
 	}
+
+
+
 	
 	ArrayList<String> rmDup(String in_file, int read_col){
 		ArrayList<String> out = new ArrayList<>();

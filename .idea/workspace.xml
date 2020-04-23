@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a431dbf-f5df-4647-ad1d-36b2d2038459" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/removeDuplicateCircle/removeDuplicatesCircRNA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/archive-tmp/circpipeTools-1.0.jar" afterPath="$PROJECT_DIR$/target/archive-tmp/circpipeTools-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Annotation/AnnotateCircRNA.class" afterPath="$PROJECT_DIR$/target/classes/Annotation/AnnotateCircRNA.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Annotation/circAnnoteOut.class" afterPath="$PROJECT_DIR$/target/classes/Annotation/circAnnoteOut.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Check.class" afterPath="$PROJECT_DIR$/target/classes/Check.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/CollapseMatrixByMultipleTools/OverLapTerm.class" afterPath="$PROJECT_DIR$/target/classes/CollapseMatrixByMultipleTools/OverLapTerm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/CollapseMatrixByMultipleTools/RunCollapse.class" afterPath="$PROJECT_DIR$/target/classes/CollapseMatrixByMultipleTools/RunCollapse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PublicMethod/Bed6P.class" afterPath="$PROJECT_DIR$/target/classes/PublicMethod/Bed6P.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" afterPath="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java" afterPath="$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Check.java" afterPath="$PROJECT_DIR$/src/main/java/Check.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CircpipeTools.java" afterPath="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java" afterPath="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java" afterPath="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/Method.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/Method.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/Record.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/Record.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,21 +38,10 @@
       <file leaf-file-name="Bed6P.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BEDreader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/BEDreader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+            <state relative-caret-position="-2356">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#440#447#0" expanded="true" />
+                <element signature="method#toString#1;class#Bed6P#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -42,93 +50,124 @@
       <file leaf-file-name="Check.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Check.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1106">
-              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circAnnoteOut.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2137">
-              <caret line="21" column="235" lean-forward="false" selection-start-line="21" selection-start-column="235" selection-end-line="21" selection-end-column="235" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GTFterm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFterm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1602">
-              <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="267">
+              <caret line="252" column="16" lean-forward="false" selection-start-line="252" selection-start-column="16" selection-end-line="259" selection-end-column="17" />
               <folding>
-                <element signature="e#0#3963#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#803#819#0" expanded="true" />
+                <element signature="method#insertRecord#0;class#Check#0" expanded="false" />
+                <element signature="method#checkBJ#0;class#Check#0" expanded="false" />
+                <element signature="method#createMergeBJ#0;class#Check#0" expanded="false" />
+                <element signature="method#checkPeak#0;class#Check#0" expanded="false" />
+                <element signature="method#checkBeds#0;class#Check#0" expanded="false" />
+                <element signature="method#bedTreeToString#0;class#Check#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Exon.java">
+      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Record.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+              <folding>
+                <element signature="e#717#718#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToolsforCMD.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1682">
+              <caret line="122" column="25" lean-forward="false" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnnotateCircRNA.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java">
+      <file leaf-file-name="CircpipeTools.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#829#846#0" expanded="true" />
-                <element signature="e#2180#2197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GTFreader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFreader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#532#553#0" expanded="true" />
-                <element signature="e#599#607#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chromosome2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <element signature="e#231#237#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwoBitParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/TwoBitParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+            <state relative-caret-position="299">
+              <caret line="86" column="53" lean-forward="false" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunCollapse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="66" column="108" lean-forward="false" selection-start-line="66" selection-start-column="99" selection-end-line="66" selection-end-column="108" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#708#721#0" expanded="true" />
+                <element signature="e#781#789#0" expanded="true" />
+                <element signature="e#5342#5350#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Annote.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Annote.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OverLapTerm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1235#1236#0" expanded="true" />
+                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1665#1666#0" expanded="true" />
+                <element signature="e#1694#1695#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1749#1750#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Method.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Method.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="93" column="54" lean-forward="false" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="removeDuplicatesCircRNA.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/removeDuplicateCircle/removeDuplicatesCircRNA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#504#517#0" expanded="true" />
+                <element signature="e#591#620#0" expanded="true" />
+                <element signature="e#677#684#0" expanded="true" />
+                <element signature="e#1522#1530#0" expanded="true" />
+                <element signature="e#3596#3597#0" expanded="true" />
+                <element signature="e#3629#3630#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,6 +202,8 @@
       <find>private</find>
       <find>\'</find>
       <find>bed</find>
+      <find>hashCode</find>
+      <find>record</find>
     </findStrings>
     <replaceStrings>
       <replace>right</replace>
@@ -185,8 +226,6 @@
         <option value="$PROJECT_DIR$/src/main/java/mergeMatrix/MyFilenameFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bed6P.java" />
         <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Bed6P.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReadsCounting/FilterBamFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReadsCounting/BamFilter.java" />
         <option value="$MAVEN_REPOSITORY$/com/github/samtools/htsjdk/2.6.0/htsjdk-2.6.0.jar!/htsjdk/samtools/BAMFileReader.class" />
@@ -195,18 +234,24 @@
         <option value="$PROJECT_DIR$/src/main/java/Annote.java" />
         <option value="$PROJECT_DIR$/src/main/java/GTFanalysis.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/GTFterm.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Gene.java" />
         <option value="$PROJECT_DIR$/src/main/java/Annotation/AnnoteOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/GTFreader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Check.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/BEDreader.java" />
         <option value="$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunMergeByCiri.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Check.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Record.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Method.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/removeDuplicateCircle/removeDuplicatesCircRNA.java" />
       </list>
     </option>
   </component>
@@ -307,7 +352,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,7 +451,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ReadsCounting" />
+              <option name="myItemId" value="removeDuplicateCircle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,42 +533,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="circpipeTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="circpipeTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Annotation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/Check.java" />
+    <property name="SearchEverywhereHistoryKey" value="hashCode&#9;ACTION&#9;GenerateEquals" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -547,42 +566,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnnotateCircRNA">
-    <configuration default="false" name="ReadsCountingWithBSJmappedFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ReadsCounting.ReadsCountingWithBSJmappedFile" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="circpipeTools" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Annote" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Annote" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="circpipeTools" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.RunCollapse">
     <configuration default="false" name="GTFanalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="GTFanalysis" />
@@ -621,6 +605,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Annotation.AnnotateCircRNA" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="circpipeTools" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="removeDuplicatesCircRNA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="removeDuplicateCircle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="removeDuplicateCircle.removeDuplicatesCircRNA" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="circpipeTools" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RunCollapse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="CollapseMatrixByMultipleTools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="CollapseMatrixByMultipleTools.RunCollapse" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -924,19 +948,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ReadsCountingWithBSJmappedFile" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Annote" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GTFanalysis" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GTFreader" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AnnotateCircRNA" />
+      <item index="0" class="java.lang.String" itemvalue="Application.GTFanalysis" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GTFreader" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AnnotateCircRNA" />
+      <item index="3" class="java.lang.String" itemvalue="Application.removeDuplicatesCircRNA" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RunCollapse" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AnnotateCircRNA" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GTFreader" />
-        <item index="2" class="java.lang.String" itemvalue="Application.GTFanalysis" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Annote" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ReadsCountingWithBSJmappedFile" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RunCollapse" />
+        <item index="1" class="java.lang.String" itemvalue="Application.removeDuplicatesCircRNA" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AnnotateCircRNA" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GTFreader" />
+        <item index="4" class="java.lang.String" itemvalue="Application.GTFanalysis" />
       </list>
     </recent_temporary>
   </component>
@@ -958,39 +982,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1324" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43502825" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09257813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39951178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38161108" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43502825" sideWeight="0.5015625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09257813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27257934" sideWeight="0.4984375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15351562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869812" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -998,7 +1021,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1007,20 +1030,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/FilterBamFile.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BamFilter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/samtools/htsjdk/2.6.0/htsjdk-2.6.0.jar!/htsjdk/samtools/BAMFileReader.class">
@@ -1048,7 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,30 +1068,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="576">
             <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Transcript.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,7 +1091,7 @@
         <state relative-caret-position="279">
           <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#annoteList#0;class#GTFanalysis#0" expanded="false" />
             <element signature="method#annoteCDS#0;class#GTFanalysis#0" expanded="false" />
             <element signature="method#annoteUTR#0;class#GTFanalysis#0" expanded="false" />
@@ -1112,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,25 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5070">
           <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
-          <folding>
-            <element signature="e#8824#8825#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Annote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,39 +1117,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
           <caret line="154" column="47" lean-forward="false" selection-start-line="154" selection-start-column="33" selection-end-line="154" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#410#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="method#getExonTree#0;class#Gene#0" expanded="false" />
-            <element signature="method#getCdsTree#0;class#Gene#0" expanded="false" />
-            <element signature="method#getUtrTree#0;class#Gene#0" expanded="false" />
-            <element signature="e#3622#3623#0" expanded="true" />
-            <element signature="e#3651#3652#0" expanded="true" />
-            <element signature="e#3830#3831#0" expanded="true" />
-            <element signature="e#3858#3859#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnoteOutTerm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnoteOutTerm.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/CancerCircDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1186,7 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1194,6 +1139,193 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/CircleRNAPipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11455">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/reflect/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="276" column="141" lean-forward="false" selection-start-line="276" selection-start-column="141" selection-end-line="276" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/SAMRecordUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="80" column="27" lean-forward="false" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/FeatureRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/ChromosomeRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/TranscriptRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/TwoBitParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="56" column="60" lean-forward="false" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#9160#9161#0" expanded="false" />
+            <element signature="e#9175#9176#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="269" column="37" lean-forward="false" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Exon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#168#169#0" expanded="false" />
+            <element signature="e#184#185#0" expanded="false" />
+            <element signature="e#216#217#0" expanded="false" />
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#260#261#0" expanded="false" />
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#314#315#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#362#363#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#543#544#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFterm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#3963#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2052#2053#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="false" />
+            <element signature="e#2128#2129#0" expanded="false" />
+            <element signature="e#2166#2167#0" expanded="false" />
+            <element signature="e#2199#2200#0" expanded="false" />
+            <element signature="e#2228#2229#0" expanded="false" />
+            <element signature="e#2272#2273#0" expanded="false" />
+            <element signature="e#2308#2309#0" expanded="false" />
+            <element signature="e#2342#2343#0" expanded="false" />
+            <element signature="e#2372#2373#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2456#2457#0" expanded="false" />
+            <element signature="e#2485#2486#0" expanded="false" />
+            <element signature="e#2513#2514#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+            <element signature="e#2586#2587#0" expanded="false" />
+            <element signature="e#2613#2614#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2674#2675#0" expanded="false" />
+            <element signature="e#2704#2705#0" expanded="false" />
+            <element signature="e#2736#2737#0" expanded="false" />
+            <element signature="e#2764#2765#0" expanded="false" />
+            <element signature="e#2806#2807#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2871#2872#0" expanded="false" />
+            <element signature="e#2900#2901#0" expanded="false" />
+            <element signature="e#2944#2945#0" expanded="false" />
+            <element signature="e#2990#2991#0" expanded="false" />
+            <element signature="e#3022#3023#0" expanded="false" />
+            <element signature="e#3050#3051#0" expanded="false" />
+            <element signature="e#3092#3093#0" expanded="false" />
+            <element signature="e#3126#3127#0" expanded="false" />
+            <element signature="e#3558#3559#0" expanded="false" />
+            <element signature="e#3624#3625#0" expanded="false" />
+            <element signature="e#3689#3690#0" expanded="false" />
+            <element signature="e#3747#3748#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFreader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3216">
+          <caret line="137" column="44" lean-forward="false" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1206,84 +1338,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/CircleRNAPipe.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Transcript.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11455">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="30" column="93" lean-forward="false" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="52" column="38" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="100" column="33" lean-forward="false" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="276" column="141" lean-forward="false" selection-start-line="276" selection-start-column="141" selection-end-line="276" selection-end-column="141" />
-          <folding>
-            <element signature="method#mateCounting_old#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/SAMRecordUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="80" column="27" lean-forward="false" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="173" column="19" lean-forward="false" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="19" />
+        <state relative-caret-position="24">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mergeMatrix/FilelistReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
+        <state relative-caret-position="436">
           <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mergeMatrix/MyFilenameFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1296,150 +1362,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mergeMatrix/MyFilenameFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/FeatureRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunMergeByCiri.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="552">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/BedRecord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
+        <state relative-caret-position="5">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/ChromosomeRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/BEDreader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="284">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/TranscriptRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/extractSequences/TwoBitParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="56" column="60" lean-forward="true" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="269" column="37" lean-forward="false" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
+        <state relative-caret-position="258">
+          <caret line="93" column="54" lean-forward="false" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Check.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1106">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="267">
+          <caret line="252" column="16" lean-forward="false" selection-start-line="252" selection-start-column="16" selection-end-line="259" selection-end-column="17" />
+          <folding>
+            <element signature="method#insertRecord#0;class#Check#0" expanded="false" />
+            <element signature="method#checkBJ#0;class#Check#0" expanded="false" />
+            <element signature="method#createMergeBJ#0;class#Check#0" expanded="false" />
+            <element signature="method#checkPeak#0;class#Check#0" expanded="false" />
+            <element signature="method#checkBeds#0;class#Check#0" expanded="false" />
+            <element signature="method#bedTreeToString#0;class#Check#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Exon.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Record.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="86" column="53" lean-forward="false" selection-start-line="86" selection-start-column="53" selection-end-line="86" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Annote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
-            <element signature="e#231#237#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Bed6P.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2356">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="method#toString#1;class#Bed6P#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1682">
+          <caret line="122" column="25" lean-forward="false" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFterm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1602">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="18" />
+          <caret line="66" column="108" lean-forward="false" selection-start-line="66" selection-start-column="99" selection-end-line="66" selection-end-column="108" />
           <folding>
-            <element signature="e#0#3963#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#803#819#0" expanded="true" />
+            <element signature="e#708#721#0" expanded="true" />
+            <element signature="e#781#789#0" expanded="true" />
+            <element signature="e#5342#5350#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFreader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/removeDuplicateCircle/removeDuplicatesCircRNA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="55">
+          <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#532#553#0" expanded="true" />
-            <element signature="e#599#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/BEDreader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#440#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/circAnnoteOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2137">
-          <caret line="21" column="235" lean-forward="false" selection-start-line="21" selection-start-column="235" selection-end-line="21" selection-end-column="235" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#829#846#0" expanded="true" />
-            <element signature="e#2180#2197#0" expanded="true" />
+            <element signature="e#504#517#0" expanded="true" />
+            <element signature="e#591#620#0" expanded="true" />
+            <element signature="e#677#684#0" expanded="true" />
+            <element signature="e#1522#1530#0" expanded="true" />
+            <element signature="e#3596#3597#0" expanded="true" />
+            <element signature="e#3629#3630#0" expanded="true" />
           </folding>
         </state>
       </provider>

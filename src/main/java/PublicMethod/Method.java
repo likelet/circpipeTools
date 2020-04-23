@@ -88,7 +88,39 @@ public class Method {
 		}
 		return out;
 	}
-	
+
+
+// read data into a Intervaltree
+	public static HashMap<String, IntervalTree<Bed6P>> loadFileToBedIntevalltree(File fi){
+		HashMap<String, IntervalTree<Bed6P>> out = new HashMap<>();
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new FileReader(fi));
+			String line = null;
+			line = reader.readLine();
+			while ((line = reader.readLine()) != null) {
+				String[] cols = line.split("\t");
+				IntervalTree<Bed6P> bj = null;
+				if (out.containsKey(cols[0])) {
+					bj = out.get(cols[0]);
+				}
+				else {
+					bj = new IntervalTree<>();
+					out.put(cols[0], bj);
+				}
+
+				int start = Integer.parseInt(cols[1]);
+				int end = Integer.parseInt(cols[2]);
+				Bed6P bed=new Bed6P(line);
+				 bj.put(start, end,bed);
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return out;
+	}
+
 	/**
 	 * put the list into file, overwrite
 	 * @param out_file output file;
@@ -136,4 +168,6 @@ public class Method {
 		out = out.substring(0, index);
 		return out;
 	}
+
+
 }

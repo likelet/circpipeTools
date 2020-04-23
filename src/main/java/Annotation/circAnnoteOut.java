@@ -139,8 +139,8 @@ public class circAnnoteOut {
             str="Intergenic" + '\t' +
                     left_transcript + '\t' +
                     left_exonID + '\t' +
-                    left_exon_start +
-                    left_exon_end +
+                    left_exon_start +'\t' +
+                    left_exon_end +'\t' +
                     right_gene + '\t' +
                     right_transcript + '\t' +
                     right_exonID + '\t' +
@@ -150,8 +150,8 @@ public class circAnnoteOut {
             str=left_gene + '\t' +
                     left_transcript + '\t' +
                     left_exonID + '\t' +
-                    left_exon_start +
-                    left_exon_end +
+                    left_exon_start +'\t' +
+                    left_exon_end +'\t' +
                     "Intergenic" + '\t' +
                     right_transcript + '\t' +
                     right_exonID + '\t' +
@@ -161,8 +161,8 @@ public class circAnnoteOut {
             str=left_gene + '\t' +
                     left_transcript + '\t' +
                     left_exonID + '\t' +
-                    left_exon_start +
-                    left_exon_end +
+                    left_exon_start +'\t' +
+                    left_exon_end +'\t' +
                     right_gene + '\t' +
                     right_transcript + '\t' +
                     right_exonID + '\t' +

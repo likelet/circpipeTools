@@ -1,8 +1,10 @@
 package CollapseMatrixByMultipleTools;
 
+import PublicMethod.Bed6P;
 import PublicMethod.Method;
 import htsjdk.samtools.util.IntervalTree;
 import mergeMatrix.FilelistReader;
+import removeDuplicateCircle.removeDuplicatesCircRNA;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -17,12 +19,11 @@ import java.util.logging.Logger;
 public class RunCollapse {
     int dev=8;
     private HashMap<String, HashMap<String, IntervalTree<ArrayList<Integer>>>> SearchFeildHash = new HashMap<String, HashMap<String, IntervalTree<ArrayList<Integer>>>>() ;
-//    private ArrayList<String> idlist=new ArrayList<>();
     private ArrayList<OverLapTerm> resultList=new ArrayList<OverLapTerm>();
     private ArrayList<String> AnalysisList=new ArrayList<String>();
     private String fileOut;
 
-    public RunCollapse(String idfile, String inputPath, String fileSuffix, String fileOut){
+    public RunCollapse(String inputPath, String fileSuffix, String fileOut){
         this.fileOut=fileOut;
         ArrayList<String> filelist= FilelistReader.getFileArrayList( inputPath,  fileSuffix);
         //initialize IDlist
@@ -31,34 +32,24 @@ public class RunCollapse {
                 HashMap<String, IntervalTree<ArrayList<Integer>>> check_map = Method.loadFile(new File(filelist.get(i)), null, this.dev);
                 File tempfile=new File(filelist.get(i));
                 String filename=tempfile.getName();
-                String tempstr=filename.replace("_merge.matrix","");
+                String tempstr=filename.replace("_merge_temp.matrix","");
 
                 SearchFeildHash.put(tempstr, check_map);
                 AnalysisList.add(tempstr);
             }
         }else{
-            System.out.println("Less than two files, can not get overlap information");
+            System.out.println("Less than two files, can not perform overlap analysis");
         }
-        BufferedReader br = null;
-        try {
-            br = new BufferedReader(new FileReader(idfile));
-            String[] str=null;
-            //skip header line
-            br.readLine();
-            while (br.ready()) {
-                str= br.readLine().split("\t");
+
+        removeDuplicatesCircRNA rd=new removeDuplicatesCircRNA(filelist);
+        ArrayList<Bed6P> rmdupBedlist=rd.getOutBedList();
+            for (Bed6P bed : rmdupBedlist){
                 //str= br.readLine();
-                OverLapTerm ot=new OverLapTerm(str[0]+"-"+ str[1]+"-"+str[2],AnalysisList);
+                OverLapTerm ot=new OverLapTerm(bed.getChr(),bed.getStart(),bed.getEnd(),AnalysisList,bed);
                 resultList.add(ot);
             }
 
 
-            br.close();
-        } catch (FileNotFoundException ex) {
-            System.out.println(idfile + " is not found! please check your filepath ");
-        } catch (IOException ex) {
-            System.out.println("IO  test error");
-        }
     }
 
     public void process(){
@@ -68,7 +59,6 @@ public class RunCollapse {
             for (int j = 0; j < AnalysisList.size(); j++) {
                 if(checkContains(tempRec,SearchFeildHash.get(AnalysisList.get(j)))){
                     resultList.get(i).AddMap(AnalysisList.get(j));
-                    System.out.println("ok");
                 }
             }
         }
@@ -124,8 +114,47 @@ public class RunCollapse {
         }
     }
 
+    public void writeBED(){
+        FileWriter fw;
+        try {
+            fw = new FileWriter(new File(fileOut));
+            String tempstr="chr\tchromStart\tchromEnd\tname\tscore\tstrand";
+            // initialize header
+            for (int i = 0; i <AnalysisList.size(); i++) {
+                tempstr=tempstr+"\t"+AnalysisList.get(i);
+            }
+            fw.append(tempstr+"\n");
+            //write content
+            for (int i = 0; i <resultList.size(); i++) {
+                fw.append(resultList.get(i).toStringSimple()+"\n");
+                fw.flush();
+            }
+
+            fw.close();
+        } catch (IOException ex) {
+            Logger.getLogger(RunCollapse.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+
+    // get merged ID list from multiple files
+    public static ArrayList<String> getIDlistFromMultipleFiles(HashMap<String, HashMap<String, IntervalTree<ArrayList<Integer>>>> SearchFeildHash){
+        ArrayList<String> idlist=new ArrayList<String>();
+        //keep ciri record first
+
+
+        return(idlist);
+    }
+
+//    public static void main(String[] args) {
+//        RunCollapse rc=new RunCollapse("/Users/likelet/test/circPlie/ciri_find_circ_merge.bed","/Users/likelet/test/circPlie","_merge.matrix", "/Users/likelet/test/circPlie/merge.matrix.txt");
+//        System.out.println(rc.AnalysisList.size());
+//        System.out.println(rc.resultList.size());
+//        rc.process();
+//        rc.writeOut();
+//    }
     public static void main(String[] args) {
-        RunCollapse rc=new RunCollapse("/Users/likelet/test/circPlie/ciri_find_circ_merge.bed","/Users/likelet/test/circPlie","_merge.matrix", "/Users/likelet/test/circPlie/merge.matrix.txt");
+        RunCollapse rc=new RunCollapse("/Users/likelet/test/circPlie","_merge_temp.matrix", "/Users/likelet/test/circPlie/merge.matrix.txt");
         System.out.println(rc.AnalysisList.size());
         System.out.println(rc.resultList.size());
         rc.process();

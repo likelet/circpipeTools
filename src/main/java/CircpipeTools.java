@@ -59,7 +59,7 @@ public class CircpipeTools {
                         ToolsforCMD.print_ansi_GREEN("\t-extract\t")+" extract sequence from BSJ site\n"+
                         ToolsforCMD.commandRender("java -jar circpipeTools.jar -extract [bed] [GTF] [genome.bt] \n")+
                         ToolsforCMD.print_ansi_GREEN("\t-collapse\t")+" Collapse circRNAs by different tools with frequencies: \n" +
-                        ToolsforCMD.commandRender("java -jar circpipeTools.jar -collapse [unique ID file] -dir [inputFilePath] -suffix [input File suffix] -out [output file name ] \n");
+                        ToolsforCMD.commandRender("java -jar circpipeTools.jar -collapse -dir [inputFilePath] -suffix [input File suffix] -out [output file name ] \n");
 				System.out.println(help);
 				return;
 		}
@@ -84,7 +84,7 @@ public class CircpipeTools {
                 String dir=FunctionClass.getArgsParameter(args, "-dir");
                 String suffix=FunctionClass.getArgsParameter(args, "-suffix");
                 String outfile=FunctionClass.getArgsParameter(args, "-out");
-                RunCollapse rc=new RunCollapse(args[1],dir,suffix,outfile);
+                RunCollapse rc=new RunCollapse(dir,suffix,outfile);
                rc.process();
                rc.writeOut();
                 
