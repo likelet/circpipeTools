@@ -134,10 +134,7 @@ public class Bed6P {
         out.append(score);
         out.append('\t');
         out.append(strand);
-        for (int i = 0; i < support.size(); i++) {
-            out.append('\t');
-            out.append(support.get(i));
-        }
+
         return out.toString();
     }
 
@@ -171,36 +168,9 @@ public class Bed6P {
         return out.toString();
     }
 
+
+
     //set overlap situation
 
-//    @Override
-    public int hashCode() {
-        // TODO Auto-generated method stub
 
-
-        return 1;
-
-    }
-
-
-
-    @Override
-    public boolean equals(Object obj) {
-
-        if((obj instanceof Bed6P)){
-            Bed6P bedcir = (Bed6P)obj;
-            if(this.getChr() !=bedcir.getChr()) {
-                return false;
-//            }else if(Math.abs(this.getStart()-bedcir.getStart())<=dev & Math.abs(this.getEnd()-bedcir.getEnd())<=dev ){
-//                System.out.println(Math.abs(this.getStart()-bedcir.getStart())+"\t"+ Math.abs(this.getEnd()-bedcir.getEnd()));
-//                return true;
-            }else if(this.getName()== bedcir.getName()){
-                System.out.println(Math.abs(this.getStart()-bedcir.getStart())+"\t"+ Math.abs(this.getEnd()-bedcir.getEnd()));
-                return true;
-            }
-        }
-        return false;
-
-
-    }
 }

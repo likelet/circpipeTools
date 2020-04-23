@@ -27,7 +27,7 @@ public class removeDuplicatesCircRNA {
         this.initialFileMap(filelist);
 
         this.removeDupProcess();
-        System.out.println(outBedList.size());
+        System.out.println(outBedList.size() + " records retained after deduplicate step");
     }
 
 

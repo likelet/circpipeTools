@@ -58,6 +58,24 @@ public class OverLapTerm {
 
     }
 
+    public String toStringBed() {
+        bedRecord.setScore(SumMatrix());// reset the score by the number of the tools supporting circRNA
+        String str = bedRecord.toString();
+        for (Iterator it =matrixHash.keySet().iterator(); it.hasNext();){
+            String tempstr= (String)it.next();
+            str=str+"\t"+matrixHash.get(tempstr);
+        }
+        return str;
+
+    }
+
+    private int SumMatrix(){
+        int count=0;
+        for (String key:matrixHash.keySet()) {
+            count+=matrixHash.get(key);
+        }
+        return count;
+    }
 
 
     public String getID(){

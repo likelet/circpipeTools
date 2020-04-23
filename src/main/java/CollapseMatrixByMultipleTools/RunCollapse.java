@@ -114,10 +114,10 @@ public class RunCollapse {
         }
     }
 
-    public void writeBED(){
+    public void writeBED(String  fileBedout){
         FileWriter fw;
         try {
-            fw = new FileWriter(new File(fileOut));
+            fw = new FileWriter(new File(fileBedout));
             String tempstr="chr\tchromStart\tchromEnd\tname\tscore\tstrand";
             // initialize header
             for (int i = 0; i <AnalysisList.size(); i++) {
@@ -126,7 +126,7 @@ public class RunCollapse {
             fw.append(tempstr+"\n");
             //write content
             for (int i = 0; i <resultList.size(); i++) {
-                fw.append(resultList.get(i).toStringSimple()+"\n");
+                fw.append(resultList.get(i).toStringBed()+"\n");
                 fw.flush();
             }
 
@@ -155,10 +155,9 @@ public class RunCollapse {
 //    }
     public static void main(String[] args) {
         RunCollapse rc=new RunCollapse("/Users/likelet/test/circPlie","_merge_temp.matrix", "/Users/likelet/test/circPlie/merge.matrix.txt");
-        System.out.println(rc.AnalysisList.size());
-        System.out.println(rc.resultList.size());
         rc.process();
         rc.writeOut();
+        rc.writeBED("/Users/likelet/test/circPlie/merge.matrix.bed");
     }
 
 
