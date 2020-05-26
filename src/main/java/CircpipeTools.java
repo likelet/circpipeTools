@@ -74,12 +74,21 @@ public class CircpipeTools {
             }else if(args[0].equals("-recount")){
                 String bsjbam=FunctionClass.getArgsParameter(args, "-bsjbam");
                 String outfile=FunctionClass.getArgsParameter(args, "-out");
-                if(FunctionClass.isContainParameter(args, "--paird")){
-                    new ReadsCountingWithBSJmappedFile(bsjbam,outfile,true);
-                }else{
-                    new ReadsCountingWithBSJmappedFile(bsjbam,outfile);
+                ReadsCountingWithBSJmappedFile rj=new ReadsCountingWithBSJmappedFile(bsjbam,outfile);
+
+                if(FunctionClass.isContainParameter(args, "--oh")){
+                    rj.overHanglength=Integer.parseInt(FunctionClass.getArgsParameter(args,"--oh"));
                 }
-                
+
+                //run analysis
+                if(FunctionClass.isContainParameter(args, "--paired")){
+                    rj.runAnalysisPair();
+                }else{
+                    rj.runAnalysisSingle();
+                }
+
+
+
             }else if(args[0].equals("-collapse")){
                 String dir=FunctionClass.getArgsParameter(args, "-dir");
                 String suffix=FunctionClass.getArgsParameter(args, "-suffix");

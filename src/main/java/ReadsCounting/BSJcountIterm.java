@@ -7,6 +7,8 @@
 package ReadsCounting;
 
 import htsjdk.samtools.util.CollectionUtil;
+
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,8 +29,9 @@ public class BSJcountIterm {
     private int start;
     
     private int end;
-    
-    private int count=0;
+
+    private HashSet<String> readset=new HashSet<String>();
+    private int count=readset.size();
 
     public BSJcountIterm(String circID, int psoudolength) {
         this.circID = circID;
@@ -51,11 +54,11 @@ public class BSJcountIterm {
     public void setChr(String chr) {
         this.chr = chr;
     }
-    
 
-    
-    
-    
+    public void setReadset(String readid) {
+        this.readset.add(readid);
+    }
+
     /**
      * Get the value of count
      *
@@ -157,6 +160,7 @@ public class BSJcountIterm {
 
     
     public String toStringSimple() {
+        this.count=this.readset.size();
         final List<?> fields = CollectionUtil.makeList(circID,this.count);
         String str = fields.stream().map(String::valueOf).collect(Collectors.joining("\t"));
         return str;

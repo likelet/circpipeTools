@@ -28,29 +28,30 @@ public class ReadsCountingWithBSJmappedFile {
     private String BSJbamfile;
     private String AllMappingfile;
     private HashMap<String,BSJcountIterm> BSJoutHash=new  HashMap<String,BSJcountIterm>();
-    private int overHanglength=5;//minimum value for read overhang BSJ site for counting
+    public int overHanglength=5;//minimum value for read overhang BSJ site for counting
     private String outfile;
     private boolean skip_bam=false; // for debug
 
-    public ReadsCountingWithBSJmappedFile(String BSJbamfile, String countOutfile) throws IOException {
-        outfile=countOutfile;
+
+
+
+    public ReadsCountingWithBSJmappedFile(String BSJbamfile, String outfile) throws IOException {
+        this.outfile=outfile;
         this.BSJbamfile = BSJbamfile;
+
+    }
+
+    public void runAnalysisSingle() throws IOException {
         initialBSJoutHashMap();
         singleCounting();
         this.write();
     }
 
-    // for mate counting
-    public ReadsCountingWithBSJmappedFile(String BSJbamfile, String outfile, boolean paired) throws IOException {
-        this.BSJbamfile = BSJbamfile;
-        this.AllMappingfile = AllMappingfile;
-        this.outfile = outfile;
+    public void runAnalysisPair() throws IOException {
         initialBSJoutHashMap();
         this.mateCounting();
         this.write();
     }
-    
-    
     
 
     void singleCounting(){
@@ -144,98 +145,6 @@ public class ReadsCountingWithBSJmappedFile {
     }
 
 
-
-    // do counting by considering the mate read location in circRNA or not, deprecated
-    void mateCounting_old() throws IOException {
-
-        if(!skip_bam){ // this chunk was set for debug
-        // read all bamfile
-
-            SamReader srAll=SamReaderFactory.makeDefault().validationStringency(ValidationStringency.SILENT).open(new File(AllMappingfile));
-            System.out.println("Read all bam file into MEM");
-            //shrunk the allbamfile
-            // filter reads names
-            final SAMFileHeader header = srAll.getFileHeader().clone();
-            final File outputBAM = new File("temp.bam");
-            final SAMFileWriter writer = new SAMFileWriterFactory().setCreateIndex(true).makeBAMWriter(header, true, outputBAM);
-
-
-            for (SAMRecord samRecord : srAll) {
-                if ((samRecord.getReadUnmappedFlag())
-                        || (samRecord.getDuplicateReadFlag())
-                        || (samRecord.getNotPrimaryAlignmentFlag())
-                        || (samRecord.getReadFailsVendorQualityCheckFlag())
-                        )
-                    continue;
-                if(SAMRecordUtil.isAlignmentSoftClipped(samRecord)){
-                    writer.addAlignment(samRecord);
-                }
-
-            }
-            srAll.close();
-            writer.close();
-
-        }
-
-
-        // re-read the filtered bam
-        SamReader srAllshrunk=SamReaderFactory.makeDefault().validationStringency(ValidationStringency.SILENT).open(new File("temp.bam"));
-        System.out.println("Read soft-cliped  bam file into MEM");
-
-        // read BSJ bamfile
-        SamReader sr=SamReaderFactory.makeDefault().validationStringency(ValidationStringency.SILENT).open(new File(BSJbamfile));
-        System.out.println("Read BSJ bam file into MEM");
-
-
-
-
-
-
-
-
-//        srAll
-
-        String tempid;
-        int midlength=200;
-        int passcount=0;
-        String tempreadsID;
-        BSJcountIterm bsjIterm;
-        System.out.println(BSJoutHash.size());
-         for (SAMRecord samRecord : sr) {
-             if ((samRecord.getReadUnmappedFlag())
-                    || (samRecord.getDuplicateReadFlag())
-                    || (samRecord.getNotPrimaryAlignmentFlag())
-                    || (samRecord.getReadFailsVendorQualityCheckFlag())
-                    ) 
-                continue;
-            tempid=samRecord.getContig();
-            midlength=BSJoutHash.get(tempid).getPsoudolength()/2;
-            // count reads that mapped over the BSJ site
-            if(samRecord.getAlignmentStart()<=(midlength-overHanglength) 
-                    && samRecord.getAlignmentEnd()>=(midlength+overHanglength) ){
-               tempreadsID=samRecord.getReadName();
-               bsjIterm=BSJoutHash.get(tempid);
-
-               // calculate time
-               long startTime = System.nanoTime();
-                boolean tempmarker = this.isMateMappedInCircle(bsjIterm, srAllshrunk, tempreadsID);
-//               if(tempmarker){
-//                   BSJoutHash.get(tempid).countAdd();
-//               }
-               // calculate time
-               long endTime = System.nanoTime();
-               System.out.println("Execution time in nanoseconds  : " + (endTime - startTime));
-            }
-             passcount++;
-             if(passcount%10000==0)
-             {
-                 System.out.println(passcount+" reads processed");
-             }
-         }
-         System.out.println(passcount+" reads in total");
-    }
-
-
     void mateCounting() throws IOException {
 
 
@@ -255,17 +164,19 @@ public class ReadsCountingWithBSJmappedFile {
                     || (samRecord.getMateUnmappedFlag())
                     )
                 continue;
-
-
+            if(samRecord.getMateReferenceName() !=samRecord.getContig()) continue;
+            //System.out.println(samRecord.getMateReferenceName() + "\t" + samRecord.getContig() );
             tempid=samRecord.getContig();
+
             midlength=BSJoutHash.get(tempid).getPsoudolength()/2;
             // count reads that mapped over the BSJ site
             if(samRecord.getAlignmentStart()<=(midlength-overHanglength)
                     && samRecord.getAlignmentEnd()>=(midlength+overHanglength) ){
-                BSJoutHash.get(tempid).countAdd();
+                BSJoutHash.get(tempid).setReadset(samRecord.getReadName());
+                System.out.println(samRecord.getReadName());
             }
             passcount++;
-            if(passcount%10000==0)
+            if(passcount%100000==0)
             {
                 System.out.println(passcount+" reads processed");
             }
@@ -274,7 +185,8 @@ public class ReadsCountingWithBSJmappedFile {
 
 
     public static void main(String[] args) throws IOException {
-        new ReadsCountingWithBSJmappedFile("/Users/likelet/test/circPlie/SRR444655.F.bam",  "/Users/likelet/test/circPlie/out.count.txt",true);
+        ReadsCountingWithBSJmappedFile rj= new ReadsCountingWithBSJmappedFile("/Users/likelet/test/circPlie/SRR444655.F.bam",  "/Users/likelet/test/circPlie/out.count.txt");
+            rj.runAnalysisPair();
     }
  
 }
