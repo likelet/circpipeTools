@@ -1,2 +1,0 @@
-ID	/Users/likelet/test/circPlie/ciri	/Users/likelet/test/circPlie/find_circ
-chr2	241755045	241756014	ciri	2.0	+	1.0	1.0	1	1
