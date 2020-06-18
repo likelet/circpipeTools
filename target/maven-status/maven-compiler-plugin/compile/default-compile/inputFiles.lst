@@ -6,6 +6,7 @@
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/FilelistReader.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/GTFreader.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/ToolsforCMD.java
+/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/ReadsCounting/FunctionClass.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/mergeMatrix/Multifile2matrix.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/Bed6P.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/Chromosome.java
@@ -18,7 +19,7 @@
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/Check.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/Method.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/ReadsCounting/SAMRecordUtil.java
-/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/FunctionClass.java
+/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/ReadsCounting/BSJreads.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/extractSequences/CircleRNAPipe.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/Annotation/CircBaseTerm.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/Annotation/CancerCircDB.java
@@ -36,5 +37,6 @@
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/Record.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/Chromosome2.java
+/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/ReadsCounting/ExtractSoftReadsAndUnmappedReads.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/extractSequences/TranscriptRecord.java
 /Users/likelet/IdeaProjects/TMPDIR/circpipeTools/src/main/java/PublicMethod/BEDreader.java

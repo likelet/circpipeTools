@@ -64,6 +64,77 @@ public class SAMRecordUtil {
         return getEndSoftClipLength(cigar.getCigarElements());
     }
 
+   /**
+    * The output is a list of (operation, length) tuples, such as [(0, 30)].
+    * This is different from the SAM specification and the cigarstring property,
+    * which uses a (length, operation) order, for example: 30M.
+    *
+    M BAM_CMATCH 0
+    I BAM_CINS 1
+    D BAM_CDEL 2
+    N BAM_CREF_SKIP 3
+    S BAM_CSOFT_CLIP 4
+    H BAM_CHARD_CLIP 5
+    P BAM_CPAD 6
+    = BAM_CEQUAL 7
+    X BAM_CDIFF 8
+    B BAM_CBACK 9
+    * @param elements
+    * @return A List of (operation, length) tuples
+    */
+
+    public static int[] getCiGarTuple(List<CigarElement> elements) {
+        int[] tempInt=new int[9];
+        for (int i = 0; i <9 ; i++) {
+            tempInt[i]=0;
+        }
+        if (elements == null) return null;
+        int i = elements.size() - 1;
+        while (i >= 0) {
+            switch (elements.get(i).getOperator()){
+                case M: tempInt[0]+=elements.get(i).getLength();
+                case I: tempInt[1]+=elements.get(i).getLength();
+                case D: tempInt[2]+=elements.get(i).getLength();
+                case N: tempInt[3]+=elements.get(i).getLength();
+                case S: tempInt[4]+=elements.get(i).getLength();
+                case H: tempInt[5]+=elements.get(i).getLength();
+                case P: tempInt[6]+=elements.get(i).getLength();
+                case EQ: tempInt[7]+=elements.get(i).getLength();
+                case X: tempInt[8]+=elements.get(i).getLength();
+            }
+
+            i--;
+        }
+        return tempInt;
+    }
+    public static int[] getCiGarTuple(SAMRecord samrecord) {
+
+        List<CigarElement>  elements=samrecord.getCigar().getCigarElements();
+        int[] tempInt=new int[9];
+        for (int i = 0; i <9 ; i++) {
+            tempInt[i]=0;
+        }
+        if (elements == null) return null;
+        int i = elements.size() - 1;
+        while (i >= 0) {
+            switch (elements.get(i).getOperator()){
+                case M: tempInt[0]+=elements.get(i).getLength();
+                case I: tempInt[1]+=elements.get(i).getLength();
+                case D: tempInt[2]+=elements.get(i).getLength();
+                case N: tempInt[3]+=elements.get(i).getLength();
+                case S: tempInt[4]+=elements.get(i).getLength();
+                case H: tempInt[5]+=elements.get(i).getLength();
+                case P: tempInt[6]+=elements.get(i).getLength();
+                case EQ: tempInt[7]+=elements.get(i).getLength();
+                case X: tempInt[8]+=elements.get(i).getLength();
+            }
+
+            i--;
+        }
+        return tempInt;
+    }
+
+
     public static int getEndSoftClipLength(List<CigarElement> elements) {
         if (elements == null) return 0;
         int i = elements.size() - 1;
@@ -76,8 +147,14 @@ public class SAMRecordUtil {
         return 0;
     }
 
+    public static int getMappingQuality_from_alignment_block(List<AlignmentBlock> blockslist){
+        int q=0;
+        for (AlignmentBlock block :blockslist) {
+            q+=block.getLength();
+        }
 
-
+        return q;
+    }
     /* get softcliped reads
     if(!skip_bam){ // this chunk was set for debug
             // read all bamfile

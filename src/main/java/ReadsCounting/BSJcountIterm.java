@@ -41,8 +41,15 @@ public class BSJcountIterm {
     
     
     protected void parseName(){
+//        String [] circIDstr=circID.split(":");
+//        chr=circIDstr[0];
+//
+//        start= Integer.parseInt(circIDstr[1].split("\\|")[0]);
+//        end= Integer.parseInt(circIDstr[1].split("\\|")[1]);
+
         String [] circIDstr=circID.split("_");
         chr=circIDstr[0];
+
         start= Integer.parseInt(circIDstr[1]);
         end= Integer.parseInt(circIDstr[2]);
     }
@@ -56,6 +63,10 @@ public class BSJcountIterm {
     }
 
     public void setReadset(String readid) {
+        if(readid.contains("/")){
+            readid=readid.substring(0,readid.length()-2);
+
+        }
         this.readset.add(readid);
     }
 
@@ -165,6 +176,9 @@ public class BSJcountIterm {
         String str = fields.stream().map(String::valueOf).collect(Collectors.joining("\t"));
         return str;
     }
-    
-    
+
+    public static void main(String[] args) {
+        System.out.println("a|b".substring(0,1));
+    }
+
 }

@@ -1,6 +1,5 @@
 extractSequences/TranscriptRecord.class
 PublicMethod/Chromosome2.class
-FunctionClass.class
 extractSequences/ChromosomeRecord.class
 FilelistReader.class
 ReadsCounting/SAMRecordUtil.class

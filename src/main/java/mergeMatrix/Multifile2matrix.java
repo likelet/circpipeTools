@@ -42,13 +42,15 @@ public class Multifile2matrix {
     private int colnumber = 2;
     private int listsize;
     private boolean skipfirstline=false;
-
+    public boolean correct_1base=false;
+    public String suffix;
     public Multifile2matrix() {
     }
 
     public Multifile2matrix(String dir, String suffix, String fileout) {
         filelist = FilelistReader.getFileArrayList(dir, suffix);
         this.fileout = fileout;
+        this.suffix=suffix;
 
     }
 
@@ -56,6 +58,7 @@ public class Multifile2matrix {
         this.initializeSimple(dir, suffix);
         this.colnumber = colnumber;
         this.processJustmerge(fileout);
+        this.suffix=suffix;
     }
 
     public void setSkipfirstline(boolean skipfirstline) {
@@ -92,21 +95,30 @@ public class Multifile2matrix {
         try {
             fw = new FileWriter(new File(fileout));
 
-            fw.append("id\tchr\tchromStart\tchromEnd\tstrand\t");
+            fw.append("id\tchr\tchromStart\tchromEnd\t");
             
             String headerstr="";
             
             for (Iterator it = filelist.iterator(); it.hasNext();) {
                 String tempstr = (String) it.next();
                 tempstr=new File(tempstr).getName();
-                headerstr=headerstr+tempstr.substring(0, tempstr.lastIndexOf(".")) + "\t";
+                headerstr=headerstr+tempstr.replace(suffix,"") + "\t";
             }
+            // remove the last \t
             headerstr=headerstr.substring(0,headerstr.length()-1);
             fw.append(headerstr+"\r\n");
+            String[] outstr;
             for (Iterator it1 = allIterm.iterator(); it1.hasNext();) {
                 String rowstr = (String) it1.next();
+                String tempstr2="";
+                outstr=rowstr.split("_");
+                // in case that the circleid have no stand information
+                if(correct_1base){
+                    tempstr2= rowstr+"\t"+outstr[0]+"\t"+(Integer.parseInt(outstr[1])-1)+"\t"+outstr[2];
+                }else{
+                    tempstr2= rowstr+"\t"+outstr[0]+"\t"+outstr[1]+"\t"+outstr[2];
+                }
 
-                String tempstr2 = rowstr+"\t"+rowstr.replace("_", "\t");
                 for (int i = 0; i < filehashstr.get(rowstr).size(); i++) {
                     tempstr2 = tempstr2 + "\t" + filehashstr.get(rowstr).get(i);
                 }
@@ -332,9 +344,10 @@ public class Multifile2matrix {
     
     
     public static void main(String[] args) throws IOException {
-       Multifile2matrix mm= new Multifile2matrix("E:\\javatest", "result", "E:\\javatest\\matrix");
-       mm.setColnumber("7");
-       mm.process();
+//       Multifile2matrix mm= new Multifile2matrix("E:\\javatest", "result", "E:\\javatest\\matrix");
+//       mm.setColnumber("7");
+//       mm.process();
+        System.out.println("\t.");
 //       mm.writeoutExel();
     }
 }
