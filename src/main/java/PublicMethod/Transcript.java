@@ -74,6 +74,7 @@ public class Transcript {
 	public void setGene(Gene gene) {
 		this.gene = gene;
 	}
+
 	/**
 	 * sort exons from whether less to greater
 	 * @param less_front means sort from less to greater while true
@@ -121,6 +122,24 @@ public class Transcript {
 		
 		this.quickSortExons(exons, start, left - 1);
 		this.quickSortExons(exons, right + 1, end);
+	}
+	/**
+	 * get length off a certain transcript
+	 */
+
+	 public int  getLength(){
+	 	int length=0;
+
+		 for (Exon exon: this.exons
+			  ) {
+		 	length+=Math.abs(exon.getEnd()-exon.getStart());
+
+		 }
+		 for (Exon utr: this.utrs
+			  ) {
+			 length+=Math.abs(utr.getEnd()-utr.getStart());
+		 }
+		 return length;
 	}
 	/**
 	 * if length of exons unsorted <=8

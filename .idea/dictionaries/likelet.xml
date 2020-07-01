@@ -1089,9 +1089,14 @@
       <w>`%+%`</w>
       <w>`%--%`</w>
       <w>`%-&gt;%`</w>
+      <w>`%...!%`</w>
+      <w>`%...&gt;%`</w>
+      <w>`%...T!%`</w>
+      <w>`%...T&gt;%`</w>
       <w>`%0%`</w>
       <w>`%&lt;-%`</w>
       <w>`%&gt;%`</w>
+      <w>`%T&gt;%`</w>
       <w>`%c%`</w>
       <w>`%du%`</w>
       <w>`%fin%`</w>
@@ -2338,6 +2343,7 @@
       <w>as.polySpline</w>
       <w>as.polylist</w>
       <w>as.polynomial</w>
+      <w>as.promise</w>
       <w>as.ra_ref</w>
       <w>as.ra_ref_v</w>
       <w>as.range</w>
@@ -2475,6 +2481,7 @@
       <w>bcPower</w>
       <w>bcPowerAxis</w>
       <w>beamer_presentation</w>
+      <w>beamer_presentation2</w>
       <w>bed2index</w>
       <w>betar</w>
       <w>betweenness</w>
@@ -2534,12 +2541,15 @@
       <w>blob</w>
       <w>blockGraphs</w>
       <w>blocks</w>
+      <w>blogdown</w>
       <w>blue</w>
       <w>blurred</w>
       <w>bmt</w>
       <w>bobyqa</w>
       <w>bold</w>
       <w>bonpow</w>
+      <w>bookdown</w>
+      <w>bookdown_site</w>
       <w>bootCase</w>
       <w>border</w>
       <w>botLeft</w>
@@ -2565,6 +2575,7 @@
       <w>browseUCSCtrack</w>
       <w>browseURL</w>
       <w>browseVignettes</w>
+      <w>browse_last</w>
       <w>browserSession</w>
       <w>browserView</w>
       <w>browserViews</w>
@@ -2579,6 +2590,9 @@
       <w>buildRepDepGraph</w>
       <w>buildVignette</w>
       <w>buildVignettes</w>
+      <w>build_chapter</w>
+      <w>build_dir</w>
+      <w>build_site</w>
       <w>build_sql</w>
       <w>bumpchart</w>
       <w>c.bit</w>
@@ -2595,6 +2609,7 @@
       <w>calcSumProb</w>
       <w>calgb</w>
       <w>calgb.pred</w>
+      <w>calibre</w>
       <w>callGeneric</w>
       <w>callNextMethod</w>
       <w>callaway.traits.game</w>
@@ -2612,6 +2627,7 @@
       <w>cat_line</w>
       <w>cat_print</w>
       <w>cat_rule</w>
+      <w>catch</w>
       <w>categorical_pal</w>
       <w>categoryReshape</w>
       <w>cause.pchazard.sim</w>
@@ -2768,6 +2784,7 @@
       <w>cld</w>
       <w>cldem</w>
       <w>clean.args</w>
+      <w>clean_book</w>
       <w>clean_site</w>
       <w>cleanupBigWigCache</w>
       <w>clearNode</w>
@@ -3007,6 +3024,8 @@
       <w>constraint</w>
       <w>contTable</w>
       <w>contains</w>
+      <w>context_document</w>
+      <w>context_document2</w>
       <w>contr.Helmert</w>
       <w>contr.Sum</w>
       <w>contr.Treatment</w>
@@ -3053,6 +3072,7 @@
       <w>count_multiple</w>
       <w>count_subgraph_isomorphisms</w>
       <w>count_triangles</w>
+      <w>count_yaml</w>
       <w>coverage</w>
       <w>coverageByTranscript</w>
       <w>covw</w>
@@ -3080,6 +3100,7 @@
       <w>crayon</w>
       <w>create.communities</w>
       <w>create.post</w>
+      <w>create_loop</w>
       <w>crit</w>
       <w>cross</w>
       <w>crossing</w>
@@ -3097,6 +3118,7 @@
       <w>current.viewport</w>
       <w>current.vpPath</w>
       <w>current.vpTree</w>
+      <w>current_loop</w>
       <w>curveGrob</w>
       <w>curve_multiple</w>
       <w>cutOff</w>
@@ -3111,6 +3133,8 @@
       <w>cylindersegment</w>
       <w>cylindrect</w>
       <w>cytoscapePlot</w>
+      <w>daemon_list</w>
+      <w>daemon_stop</w>
       <w>dat</w>
       <w>data</w>
       <w>data.ellipse</w>
@@ -3228,6 +3252,7 @@
       <w>densityMclust</w>
       <w>densityMclust.diagnostic</w>
       <w>densityPlot</w>
+      <w>dep_path</w>
       <w>deparseLatex</w>
       <w>dependsOnPkgs</w>
       <w>deprecate_soft</w>
@@ -3237,6 +3262,7 @@
       <w>depth</w>
       <w>descentDetails</w>
       <w>description</w>
+      <w>destroy_loop</w>
       <w>destructure</w>
       <w>detail</w>
       <w>detergent</w>
@@ -3460,6 +3486,7 @@
       <w>epicoseconds</w>
       <w>epiweek</w>
       <w>epiyear</w>
+      <w>epub_book</w>
       <w>erdos.renyi.game</w>
       <w>errorBars</w>
       <w>errorSubstitutionMatrices</w>
@@ -3511,6 +3538,7 @@
       <w>existsMethod</w>
       <w>existsNMFMethod</w>
       <w>existsNMFSeed</w>
+      <w>exists_loop</w>
       <w>exitCheck</w>
       <w>exons</w>
       <w>exonsBy</w>
@@ -3627,6 +3655,7 @@
       <w>filterType</w>
       <w>filterVcf</w>
       <w>finalDefaultMethod</w>
+      <w>finally</w>
       <w>find</w>
       <w>findClass</w>
       <w>findCompatibleOverlaps</w>
@@ -3643,9 +3672,13 @@
       <w>findSeed</w>
       <w>findSpliceOverlaps</w>
       <w>findUnique</w>
+      <w>find_categories</w>
       <w>find_devpackage</w>
       <w>find_external_resources</w>
       <w>find_gs_cmd</w>
+      <w>find_pandoc</w>
+      <w>find_tags</w>
+      <w>find_yaml</w>
       <w>finish</w>
       <w>first</w>
       <w>fit</w>
@@ -3937,11 +3970,14 @@
       <w>gisticBubblePlot</w>
       <w>gisticChromPlot</w>
       <w>gisticOncoPlot</w>
+      <w>gitbook</w>
       <w>github_document</w>
+      <w>github_document2</w>
       <w>glht</w>
       <w>glimpse</w>
       <w>glob2rx</w>
       <w>globalVariables</w>
+      <w>global_loop</w>
       <w>gmmhd</w>
       <w>gmmhdClassify</w>
       <w>gmmhdClusterCores</w>
@@ -4256,6 +4292,8 @@
       <w>html</w>
       <w>html_attr</w>
       <w>html_attrs</w>
+      <w>html_book</w>
+      <w>html_chapters</w>
       <w>html_children</w>
       <w>html_code_block</w>
       <w>html_dependency_bootstrap</w>
@@ -4267,28 +4305,40 @@
       <w>html_dependency_pagedtable</w>
       <w>html_dependency_tocify</w>
       <w>html_document</w>
+      <w>html_document2</w>
       <w>html_document_base</w>
       <w>html_esc</w>
       <w>html_form</w>
       <w>html_fragment</w>
+      <w>html_fragment2</w>
       <w>html_name</w>
       <w>html_node</w>
       <w>html_nodes</w>
       <w>html_notebook</w>
+      <w>html_notebook2</w>
       <w>html_notebook_metadata</w>
       <w>html_notebook_output_code</w>
       <w>html_notebook_output_html</w>
       <w>html_notebook_output_img</w>
       <w>html_notebook_output_png</w>
+      <w>html_page</w>
       <w>html_session</w>
       <w>html_structure</w>
       <w>html_table</w>
       <w>html_tag</w>
       <w>html_text</w>
       <w>html_vignette</w>
+      <w>html_vignette2</w>
+      <w>httd</w>
+      <w>httw</w>
       <w>hub.score</w>
       <w>hub_score</w>
       <w>hue_pal</w>
+      <w>hugo_build</w>
+      <w>hugo_cmd</w>
+      <w>hugo_convert</w>
+      <w>hugo_server</w>
+      <w>hugo_version</w>
       <w>hypvol</w>
       <w>iRNGStream</w>
       <w>iRNGSubStream</w>
@@ -4399,6 +4449,8 @@
       <w>install.extras</w>
       <w>install.packages</w>
       <w>installFoundDepends</w>
+      <w>install_hugo</w>
+      <w>install_theme</w>
       <w>install_tinytex</w>
       <w>installed.packages</w>
       <w>int2ftM</w>
@@ -4434,6 +4486,7 @@
       <w>inverseResponsePlot</w>
       <w>invertStrand</w>
       <w>ioslides_presentation</w>
+      <w>ioslides_presentation2</w>
       <w>iqr</w>
       <w>iqrDiff</w>
       <w>ireadBin</w>
@@ -4486,6 +4539,8 @@
       <w>is.period</w>
       <w>is.polylist</w>
       <w>is.polynomial</w>
+      <w>is.promise</w>
+      <w>is.promising</w>
       <w>is.relistable</w>
       <w>is.ri</w>
       <w>is.separator</w>
@@ -4600,6 +4655,7 @@
       <w>ivs_size</w>
       <w>izip</w>
       <w>jagam</w>
+      <w>jekyll</w>
       <w>jiggle</w>
       <w>join</w>
       <w>joinFun</w>
@@ -4620,6 +4676,7 @@
       <w>keysort</w>
       <w>keysortorder</w>
       <w>keytypes</w>
+      <w>kindlegen</w>
       <w>kiteChart</w>
       <w>km.mrl</w>
       <w>kmplot</w>
@@ -4662,9 +4719,11 @@
       <w>last_warning</w>
       <w>last_warnings</w>
       <w>lastcit.game</w>
+      <w>later</w>
       <w>latexToUtf8</w>
       <w>latex_bibliography</w>
       <w>latex_dependency</w>
+      <w>latex_dependency_tikz</w>
       <w>latex_document</w>
       <w>latex_fragment</w>
       <w>latex_preamble</w>
@@ -4866,6 +4925,7 @@
       <w>lollipopPlot</w>
       <w>lollipopPlot2</w>
       <w>longestConsecutive</w>
+      <w>loop_empty</w>
       <w>lp</w>
       <w>ls.size</w>
       <w>ls.str</w>
@@ -4894,6 +4954,7 @@
       <w>magma</w>
       <w>maintainer</w>
       <w>majorityVote</w>
+      <w>make</w>
       <w>make.db.names</w>
       <w>make.packages.html</w>
       <w>make.socket</w>
@@ -4969,6 +5030,7 @@
       <w>margin</w>
       <w>marginalModelPlot</w>
       <w>marginalModelPlots</w>
+      <w>markdown_document2</w>
       <w>mask</w>
       <w>maskGaps</w>
       <w>maskMotif</w>
@@ -5259,6 +5321,7 @@
       <w>newClassRepresentation</w>
       <w>newEmptyObject</w>
       <w>new_blob</w>
+      <w>new_content</w>
       <w>new_data_frame</w>
       <w>new_date</w>
       <w>new_datetime</w>
@@ -5276,13 +5339,17 @@
       <w>new_pillar_shaft_simple</w>
       <w>new_pillar_title</w>
       <w>new_pillar_type</w>
+      <w>new_post</w>
+      <w>new_promise_domain</w>
       <w>new_rcrd</w>
+      <w>new_site</w>
       <w>new_tibble</w>
       <w>new_vctr</w>
       <w>news</w>
       <w>newuoa</w>
       <w>nextBoot</w>
       <w>nextRNG</w>
+      <w>next_op_secs</w>
       <w>nexus.get</w>
       <w>nexus.info</w>
       <w>nexus.list</w>
@@ -5358,6 +5425,7 @@
       <w>notExp2</w>
       <w>notLog</w>
       <w>notLog2</w>
+      <w>notebook</w>
       <w>now</w>
       <w>nrmse</w>
       <w>nrow</w>
@@ -5405,6 +5473,7 @@
       <w>objective</w>
       <w>ocat</w>
       <w>odt_document</w>
+      <w>odt_document2</w>
       <w>offset</w>
       <w>old.packages</w>
       <w>oligonucleotideFrequency</w>
@@ -5551,9 +5620,11 @@
       <w>pandoc_available</w>
       <w>pandoc_citeproc_convert</w>
       <w>pandoc_convert</w>
+      <w>pandoc_exec</w>
       <w>pandoc_highlight_args</w>
       <w>pandoc_include_args</w>
       <w>pandoc_latex_engine_args</w>
+      <w>pandoc_metadata_arg</w>
       <w>pandoc_options</w>
       <w>pandoc_path_arg</w>
       <w>pandoc_self_contained_html</w>
@@ -5585,6 +5656,7 @@
       <w>parse_hm</w>
       <w>parse_hms</w>
       <w>parse_html_notebook</w>
+      <w>parse_install</w>
       <w>parse_integer</w>
       <w>parse_logical</w>
       <w>parse_number</w>
@@ -5641,7 +5713,9 @@
       <w>pcoverageByTranscript</w>
       <w>pdIdnot</w>
       <w>pdTens</w>
+      <w>pdf_book</w>
       <w>pdf_document</w>
+      <w>pdf_document2</w>
       <w>pdflatex</w>
       <w>pe.sasieni</w>
       <w>peek_vars</w>
@@ -5798,6 +5872,7 @@
       <w>powerTransform</w>
       <w>power_centrality</w>
       <w>powerpoint_presentation</w>
+      <w>powerpoint_presentation2</w>
       <w>preDrawDetails</w>
       <w>pred.cum</w>
       <w>pred.des</w>
@@ -5834,6 +5909,7 @@
       <w>pretty_ms</w>
       <w>pretty_sec</w>
       <w>prettyunits</w>
+      <w>preview_chapter</w>
       <w>print</w>
       <w>print.Event</w>
       <w>print.Mclust</w>
@@ -5907,6 +5983,14 @@
       <w>progress_bar</w>
       <w>prohibitGeneric</w>
       <w>projpar.MclustDR</w>
+      <w>promise</w>
+      <w>promise_all</w>
+      <w>promise_map</w>
+      <w>promise_race</w>
+      <w>promise_reduce</w>
+      <w>promise_reject</w>
+      <w>promise_resolve</w>
+      <w>promises</w>
       <w>promoter</w>
       <w>promoters</w>
       <w>prompt</w>
@@ -5969,6 +6053,8 @@
       <w>psva</w>
       <w>psychiatric</w>
       <w>ptext3d</w>
+      <w>publish_book</w>
+      <w>publish_site</w>
       <w>purity</w>
       <w>push.viewport</w>
       <w>pushViewport</w>
@@ -6041,6 +6127,7 @@
       <w>randomGraph</w>
       <w>randomNodeGraph</w>
       <w>randomPairs</w>
+      <w>random_port</w>
       <w>random_walk</w>
       <w>randomize</w>
       <w>randomly</w>
@@ -6145,6 +6232,7 @@
       <w>read_xls</w>
       <w>read_xlsx</w>
       <w>read_xml</w>
+      <w>read_yaml</w>
       <w>readr</w>
       <w>readr_example</w>
       <w>readxl</w>
@@ -6206,6 +6294,7 @@
       <w>removedEdges</w>
       <w>render</w>
       <w>renderGraph</w>
+      <w>render_book</w>
       <w>render_delayed</w>
       <w>render_notes</w>
       <w>render_site</w>
@@ -6250,6 +6339,7 @@
       <w>resolveRasterSize</w>
       <w>resolveVJust</w>
       <w>resolve_output_format</w>
+      <w>resolve_refs_html</w>
       <w>resource</w>
       <w>restrictToSNV</w>
       <w>restricted.residual.mean</w>
@@ -6277,6 +6367,8 @@
       <w>rmarkdown</w>
       <w>rmarkdown_format</w>
       <w>rmatrix</w>
+      <w>rmdv1</w>
+      <w>rmdv2</w>
       <w>rmvn</w>
       <w>rname</w>
       <w>rng.equal</w>
@@ -6346,6 +6438,7 @@
       <w>rss</w>
       <w>rtags</w>
       <w>rtf_document</w>
+      <w>rtf_document2</w>
       <w>rtracklayer</w>
       <w>ruginv</w>
       <w>rule</w>
@@ -6360,6 +6453,7 @@
       <w>runTest</w>
       <w>runTopologyGSA</w>
       <w>runTopologyGSAMulti</w>
+      <w>run_now</w>
       <w>runcodeServer</w>
       <w>runcodeUI</w>
       <w>runjs</w>
@@ -6488,6 +6582,11 @@
       <w>seqtype</w>
       <w>sequenceLayer</w>
       <w>sequential_pal</w>
+      <w>serve_book</w>
+      <w>serve_example</w>
+      <w>serve_site</w>
+      <w>server_config</w>
+      <w>servr</w>
       <w>sessionInfo</w>
       <w>session_history</w>
       <w>set.edge.attribute</w>
@@ -6556,6 +6655,11 @@
       <w>shiny_prerendered_clean</w>
       <w>shiny_prerendered_server_start_code</w>
       <w>shinyjs</w>
+      <w>shortcode</w>
+      <w>shortcode_close</w>
+      <w>shortcode_html</w>
+      <w>shortcode_open</w>
+      <w>shortcodes</w>
       <w>shortest.paths</w>
       <w>shortest_paths</w>
       <w>show</w>
@@ -6648,6 +6752,7 @@
       <w>slanczos</w>
       <w>sliceArray</w>
       <w>slidy_presentation</w>
+      <w>slidy_presentation2</w>
       <w>slot</w>
       <w>slotNames</w>
       <w>slotsFromS3</w>
@@ -6798,6 +6903,7 @@
       <w>stop_incompatible_op</w>
       <w>stop_incompatible_size</w>
       <w>stop_incompatible_type</w>
+      <w>stop_server</w>
       <w>stopwords_ar</w>
       <w>stopwords_de</w>
       <w>stopwords_en</w>
@@ -6998,6 +7104,7 @@
       <w>textvector</w>
       <w>theme_dose</w>
       <w>theme_ridges</w>
+      <w>then</w>
       <w>thigmophobe</w>
       <w>thigmophobe.labels</w>
       <w>threeUTRsByTranscript</w>
@@ -7149,7 +7256,11 @@
       <w>ts_eval</w>
       <w>ts_tempfile</w>
       <w>tsxpos</w>
+      <w>tufte_book2</w>
       <w>tufte_handout</w>
+      <w>tufte_handout2</w>
+      <w>tufte_html2</w>
+      <w>tufte_html_book</w>
       <w>tuneRF</w>
       <w>tw</w>
       <w>two.stage</w>
@@ -7217,6 +7328,7 @@
       <w>updateGroup</w>
       <w>updateObject</w>
       <w>updateW_GR</w>
+      <w>update_hugo</w>
       <w>update_pkg_po</w>
       <w>upgrade</w>
       <w>upgrade_graph</w>
@@ -7415,6 +7527,7 @@
       <w>viewport.layout</w>
       <w>viewport.transform</w>
       <w>vif</w>
+      <w>vign</w>
       <w>vignette</w>
       <w>vignetteDepends</w>
       <w>vignetteEngine</w>
@@ -7509,6 +7622,7 @@
       <w>with_lgl</w>
       <w>with_libpaths</w>
       <w>with_locale</w>
+      <w>with_loop</w>
       <w>with_makevars</w>
       <w>with_mds</w>
       <w>with_message_sink</w>
@@ -7523,10 +7637,12 @@
       <w>with_postscript</w>
       <w>with_preserve_seed</w>
       <w>with_process_cleanup</w>
+      <w>with_promise_domain</w>
       <w>with_seed</w>
       <w>with_sugiyama</w>
       <w>with_svg</w>
       <w>with_temp_libpaths</w>
+      <w>with_temp_loop</w>
       <w>with_tempfile</w>
       <w>with_tiff</w>
       <w>with_tz</w>
@@ -7540,6 +7656,7 @@
       <w>wnote</w>
       <w>wordStem</w>
       <w>word_document</w>
+      <w>word_document2</w>
       <w>wordcloud</w>
       <w>wordlayout</w>
       <w>wrap_format</w>
@@ -7574,6 +7691,7 @@
       <w>write_rds</w>
       <w>write_tsv</w>
       <w>write_xml</w>
+      <w>write_yaml</w>
       <w>writedf.combiner</w>
       <w>writelabel</w>
       <w>xDetails</w>

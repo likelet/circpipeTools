@@ -287,7 +287,6 @@ public class ReadsCountingWithBSJmappedFile {
             // counting reads that have no mapping on the the whole genome reference
             if ((samRecord.getReadUnmappedFlag())) {
                 BSJreads tempbsj = BSJhash.get(samRecord.getReadName());
-
                 BSJhash.get(samRecord.getReadName()).setPassAllbam(true);
                 BSJhash.get(samRecord.getReadName()).setTotalSamstr(samRecord.getSAMString());
                 BSJoutHash.get(tempbsj.getCircRNAid()).setReadset(tempbsj.getReadid());
