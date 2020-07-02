@@ -13,31 +13,32 @@ public class AnnotateCircRNA {
 
 
 
-    public void batchAnnotation(ArrayList<Bed6P> circBedlist, HashMap<String, Chromosome2> gffmap){
+    public void batchAnnotationGTF(ArrayList<CircleRNAannotationTerm> circBedlist, HashMap<String, Chromosome2> gffmap){
 
         Chromosome2 chr=null;
-        for (Bed6P cirBed:circBedlist) {
+        for (CircleRNAannotationTerm cirBed:circBedlist) {
             if(gffmap.get(cirBed.getChr())==null){
-                System.out.println(cirBed.getChr()+" not in the gtf file!");
+                System.out.println(cirBed.getChr()+" not in the gtf file!, please check the consistency between you genome and gtf files");
             }
             chr = gffmap.get(cirBed.getChr());
 
-            HashMap<String, GTFterm> res=this.Annote(cirBed,chr);
+            this.Annote(cirBed,chr);
 
-            System.out.println(cirBed +"\t"+ this.OutputRender(res));
+           // System.out.println(cirBed +"\t"+ this.OutputRender(res));
         }
 
     }
 
 
-    public HashMap<String, GTFterm> Annote(Bed6P circlebed, Chromosome2 chr){
+    public void Annote(CircleRNAannotationTerm circlebed, Chromosome2 chr){
         HashMap<String, GTFterm> annoteMap=new HashMap<String, GTFterm> ();
         GTFterm annoteExonLeft=null;
         GTFterm annoteExonRight=null;
+
         //left pos
-        // +1 if input are bed format
+        // +1 if for input as  bed format and the annotation is gtf format which is 1-based
         int start=circlebed.getStart()+1;
-        int end= circlebed.getStart()+20;
+        int end= circlebed.getStart()+2;
         if(chr.getGeneTree().minOverlapper(start,end)!=null){
             Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
             if(annoteGeneLeft.getExonTreeNew().minOverlapper(start,end)!=null){
@@ -64,7 +65,7 @@ public class AnnotateCircRNA {
         annoteMap.put("right",annoteExonRight);
 
 
-        return annoteMap;
+
     }
 
     public HashMap<String, GTFterm> AnnoteNonBed(Bed6P circlebed, Chromosome2 chr){
@@ -142,11 +143,11 @@ public class AnnotateCircRNA {
     }
 
 
-    public static void main(String[] args) {
-        HashMap<String, Chromosome2> gffmap = GTFreader.readGTF("/Users/likelet/IdeaProjects/TMPDIR/hg19_chr2.gencode.annotation.gtf");
-        ArrayList<Bed6P> bedlist= BEDreader.bedreaderToList("/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/pos20190317_modify_ciri.candidates.bed");
-        new AnnotateCircRNA().batchAnnotation(bedlist, gffmap);
-    }
+    //public static void main(String[] args) {
+      //  HashMap<String, Chromosome2> gffmap = GTFreader.readGTF("/Users/likelet/IdeaProjects/TMPDIR/hg19_chr2.gencode.annotation.gtf");
+       // ArrayList<Bed6P> bedlist= BEDreader.bedreaderToList("/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/pos20190317_modify_ciri.candidates.bed");
+       // new AnnotateCircRNA().batchAnnotation(bedlist, gffmap);
+    //}
 
 
 

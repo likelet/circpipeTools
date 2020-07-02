@@ -6,7 +6,6 @@ import PublicMethod.Transcript;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Created by likelet on 2020/6/30.
@@ -14,9 +13,10 @@ import java.util.HashSet;
  */
 public class CircleRNAannotationTerm extends Bed6P {
     public int offset=0;
+    public circAnnoteOut circAnnoteDetails=new circAnnoteOut();
 
     private HashMap<String, Integer> transcript_scoreSet =new   HashMap<String, Integer> ();// store annotated transcript score of gene with multiple transcript .
-    private String annotateStr ="";// should be exonic, intergenic, intronic, UTR .
+    private String annotateStr ="";// should be exonic, intergenic, intronic, UTR, TwoGene.
     private circAnnoteOut circAnnoteOut;
     private HashMap<String, Integer> transcript_lengthSet =new HashMap<String, Integer>();
 
@@ -80,9 +80,23 @@ public class CircleRNAannotationTerm extends Bed6P {
 
     public String getBestTranscript(){
 
-        int[] score_array=new int[];
-        Arrays.sort(nums);
+        int biggest_score =0;
+        String transID="";
+        for (String transcripID: transcript_scoreSet.keySet()
+             ) {
+            int tempscore = transcript_scoreSet.get(transcripID) ;
+            if(tempscore==0 || tempscore<biggest_score) continue; // escape transcript with no overlap
+            if(tempscore>biggest_score){
+                biggest_score=transcript_scoreSet.get(transcripID);
+                transID=transcripID;
+            }
+            if(tempscore==biggest_score && transcript_lengthSet.get(transcripID)>=transcript_lengthSet.get(transID) ){
+                transID=transcripID;
+            }
 
+        }
+
+        return transID;
     }
 
 }
