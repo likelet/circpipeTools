@@ -33,6 +33,7 @@ public class GTFterm {
     private char strand;
     private String frame;
     private LinkedHashMap<String, String> attrbutemap = new LinkedHashMap<String, String>();
+    private String termstr;
 
     public GTFterm(String str){
         String [] tempstr=str.split("\t");
@@ -45,6 +46,7 @@ public class GTFterm {
         this.strand = tempstr[6].charAt(0);
         this.frame = tempstr[7];
         this.format(tempstr[8]);
+        this.termstr = str;
     }
 
 
@@ -152,6 +154,26 @@ public class GTFterm {
 
     public void setSpecificAttrbute(String key, String value) {
         this.attrbutemap.put(key, "\""+value+"\"");
+    }
+
+    public void setStrand(char strand) {
+        this.strand = strand;
+    }
+
+    public LinkedHashMap<String, String> getAttrbutemap() {
+        return attrbutemap;
+    }
+
+    public void setAttrbutemap(LinkedHashMap<String, String> attrbutemap) {
+        this.attrbutemap = attrbutemap;
+    }
+
+    public String getTermstr() {
+        return termstr;
+    }
+
+    public void setTermstr(String termstr) {
+        this.termstr = termstr;
     }
 
     @Override

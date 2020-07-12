@@ -36,4 +36,30 @@ public class BEDreader {
         return resList;
 
     }
+
+    public static ArrayList<CircleRNAannotationTerm> bedreaderToCircAnnotationList(String bedfile){
+        System.out.println("Parsing BED file format ...");
+        int count=0;
+        ArrayList<CircleRNAannotationTerm> resList=new ArrayList<CircleRNAannotationTerm>();
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(bedfile));
+            while (br.ready()) {
+                String str = br.readLine();
+                CircleRNAannotationTerm circbed=new CircleRNAannotationTerm(str);
+                resList.add(circbed);
+                count++;
+            }
+            br.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println(bedfile + " is not found! please check your filepath !");
+        } catch (IOException e){
+            System.out.println("IO error!");
+        }
+
+        System.out.println("Parsing BED file format(done)");
+        System.out.println("Total "+count+" items parsed ");
+        return resList;
+
+    }
 }

@@ -45,9 +45,12 @@ public class Bed6P {
         this.chr = element[0];
         this.start = Integer.parseInt(element[1]);
         this.end = Integer.parseInt(element[2]);
-        this.name = element[3];
-        this.score = Double.parseDouble(element[4]);
-        this.strand = element[5].charAt(0);
+        if(element.length>=3){
+            this.name = element[3];
+            this.score = Double.parseDouble(element[4]);
+            this.strand = element[5].charAt(0);
+        }
+
 
     }
 

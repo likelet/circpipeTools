@@ -1,76 +1,71 @@
 package PublicMethod;
 
-import java.util.ArrayList;
+
+import java.util.HashMap;
 
 
+import com.sun.tools.javah.Gen;
 import htsjdk.samtools.util.IntervalTree;
 
-public class Gene {
+public class Gene extends GTFterm{
 	
-	private String id=null;
-	private String symbol=null;
-	private char strand='.';
-	private int start=0;
-	private int end=0;
-	private ArrayList<Transcript> scripts=null;
+	private String geneId =null;
+	private String geneSymbol =null;
+	private String geneType =null;
+
+	private HashMap<String,Transcript> transcriptHashMap=new HashMap<String,Transcript>();
 	private Chromosome chr=null;
-	private String allstring="";
-	private IntervalTree<GTFterm> exonTree=new IntervalTree<GTFterm>();
 
-	public Gene(String id, int start,int end, String allstring){
-		this.id=id;
-		this.start=start;
-		this.end=end;
-		this.allstring=allstring;
+	//private IntervalTree<GTFterm> exonTree=new IntervalTree<GTFterm>();
+
+	public Gene(String gtfstr) {
+		super(gtfstr);
+		this.geneId=this.getSpecificAttrbute("gene_id");
+		this.geneSymbol=this.getSpecificAttrbute("gene_name");
+		this.geneType = this.getSpecificAttrbute("gene_type");
 	}
 
-	public Gene(String id, String symbol, char strand, int start, int end, ArrayList<Transcript> scripts,
-			Chromosome chr) {
-		super();
-		this.id = id;
-		this.symbol = symbol;
-		this.strand = strand;
-		this.start = start;
-		this.end = end;
-		this.scripts = scripts;
-		this.chr = chr;
+
+	public String getGeneId() {
+		return geneId;
 	}
-	public String getId() {
-		return id;
+
+	public void setGeneId(String geneId) {
+		this.geneId = geneId;
 	}
-	public void setId(String id) {
-		this.id = id;
+
+	public String getGeneSymbol() {
+		return geneSymbol;
 	}
-	public String getSymbol() {
-		return symbol;
+
+	public void setGeneSymbol(String geneSymbol) {
+		this.geneSymbol = geneSymbol;
 	}
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
+
+	public String getGeneType() {
+		return geneType;
 	}
-	public char getStrand() {
-		return strand;
+
+	public void setGeneType(String geneType) {
+		this.geneType = geneType;
 	}
-	public void setStrand(char strand) {
-		this.strand = strand;
+
+	public HashMap<String, Transcript> getTranscriptHashMap() {
+		return transcriptHashMap;
 	}
-	public int getStart() {
-		return start;
+
+	public void setTranscriptHashMap(HashMap<String, Transcript> transcriptHashMap) {
+		this.transcriptHashMap = transcriptHashMap;
 	}
-	public void setStart(int start) {
-		this.start = start;
+
+	public HashMap<String,Transcript>  getScripts() {
+		return transcriptHashMap;
 	}
-	public int getEnd() {
-		return end;
+	public void addTranscript(String transid,Transcript transcript) {
+		this.transcriptHashMap.put(transid,transcript);
 	}
-	public void setEnd(int end) {
-		this.end = end;
-	}
-	public ArrayList<Transcript> getScripts() {
-		return scripts;
-	}
-	public void setScripts(ArrayList<Transcript> scripts) {
-		this.scripts = scripts;
-	}
+
+
 
 	public Chromosome getChr() {
 		return chr;
@@ -82,77 +77,85 @@ public class Gene {
 	 * build tree of exons in the gene
 	 * @return the tree
 	 */
-	public IntervalTree<Exon> getExonTree(){
-		IntervalTree<Exon> out = new IntervalTree<>();
-		if (this.scripts == null) {
-			return out;
-		}
-		for (int i = 0; i < this.scripts.size(); i++) {
-			Transcript script = this.scripts.get(i);
-			for (int j = 0; j < script.getExons().size(); j++) {
-				Exon exon = script.getExons().get(j);
-				Exon old = out.put(exon.getStart(), exon.getEnd(), exon);
-				if (old != null && script.getEnd() - script.getStart() < old.getScript().getEnd() - old.getScript().getStart()) {
-					out.put(old.getStart(), old.getEnd(), old);
-				}
-			}
-		}
-		return out;
-	}
+//	public IntervalTree<Exon> getExonTree(){
+//		IntervalTree<Exon> out = new IntervalTree<>();
+//		if (this.transcriptHashMap == null) {
+//			return out;
+//		}
+//		for (String transid:transcriptHashMap.keySet()
+//			 ) {
+//			Transcript script = this.transcriptHashMap.get(transid);
+//			for (int j = 0; j < script.getExons().size(); j++) {
+//				Exon exon = script.getExons().get(j);
+//				Exon old = out.put(exon.getStart(), exon.getEnd(), exon);
+//				if (old != null && script.getEnd() - script.getStart() < old.getScript().getEnd() - old.getScript().getStart()) {
+//					out.put(old.getStart(), old.getEnd(), old);
+//				}
+//			}
+//		}
+//		return out;
+//	}
 	/**
 	 * build tree of CDSs in the gene
 	 * @return the tree
 	 */
-	public IntervalTree<Exon> getCdsTree(){
-		IntervalTree<Exon> out = new IntervalTree<>();
-		if (this.scripts == null) {
-			return out;
-		}
-		for (int i = 0; i < this.scripts.size(); i++) {
-			Transcript script = this.scripts.get(i);
-			for (int j = 0; j < script.getCdss().size(); j++) {
-				Exon exon = script.getCdss().get(j);
-				Exon old = out.put(exon.getStart(), exon.getEnd(), exon);
-				if (old != null && script.getEnd() - script.getStart() < old.getScript().getEnd() - old.getScript().getStart()) {
-					out.put(old.getStart(), old.getEnd(), old);
-				}
-			}
-		}
-		return out;
-	}
+//	public IntervalTree<Exon> getCdsTree(){
+//		IntervalTree<Exon> out = new IntervalTree<>();
+//		if (this.transcriptHashMap == null) {
+//			return out;
+//		}
+//		for (String transid:transcriptHashMap.keySet()
+//				) {
+//			Transcript script = this.transcriptHashMap.get(transid);
+//			for (int j = 0; j < script.getCdss().size(); j++) {
+//				Exon exon = script.getCdss().get(j);
+//				Exon old = out.put(exon.getStart(), exon.getEnd(), exon);
+//				if (old != null && script.getEnd() - script.getStart() < old.getScript().getEnd() - old.getScript().getStart()) {
+//					out.put(old.getStart(), old.getEnd(), old);
+//				}
+//			}
+//		}
+//		return out;
+//	}
 	/**
 	 * build tree of UTRs in the gene
 	 * @return the tree
 	 */
-	public IntervalTree<Exon> getUtrTree(){
-		IntervalTree<Exon> out = new IntervalTree<>();
-		if (this.scripts == null) {
-			return out;
-		}
-		for (int i = 0; i < this.scripts.size(); i++) {
-			Transcript script = this.scripts.get(i);
-			for (int j = 0; j < script.getUtrs().size(); j++) {
-				Exon exon = script.getUtrs().get(j);
-				Exon old = out.put(exon.getStart(), exon.getEnd(), exon);
-				if (old != null && script.getEnd() - script.getStart() < old.getScript().getEnd() - old.getScript().getStart()) {
-					out.put(old.getStart(), old.getEnd(), old);
-				}
-			}
-		}
-		return out;
-	}
+//	public IntervalTree<Exon> getUtrTree(){
+//		IntervalTree<Exon> out = new IntervalTree<>();
+//		if (this.transcriptHashMap == null) {
+//			return out;
+//		}
+//		for (String transid:transcriptHashMap.keySet()
+//				) {
+//			Transcript script = this.transcriptHashMap.get(transid);
+//			for (int j = 0; j < script.getUtrs().size(); j++) {
+//				Exon exon = script.getUtrs().get(j);
+//				Exon old = out.put(exon.getStart(), exon.getEnd(), exon);
+//				if (old != null && script.getEnd() - script.getStart() < old.getScript().getEnd() - old.getScript().getStart()) {
+//					out.put(old.getStart(), old.getEnd(), old);
+//				}
+//			}
+//		}
+//		return out;
+//	}
 
 	public String getAllstring(){
-		return(this.allstring);
+		return(this.getAllstring());
 	}
 
-	public void AddExon(GTFterm gtfterm){
-		if(gtfterm!=null){
-			exonTree.put(gtfterm.getStart(),gtfterm.getEnd(),gtfterm);
+	public void AddExon(String str){
+
+			Exon exon=new Exon(str);
+			//exonTree.put(exon.getStart(),exon.getEnd(),exon);
+			if(exon.getSpecificAttrbute("transcript_id")!=null){
+				String transid=exon.getSpecificAttrbute("transcript_id");
+				this.transcriptHashMap.get(transid).addExon(exon);
+
 		}
 	}
 
-	public IntervalTree<GTFterm> getExonTreeNew(){
-		return(this.exonTree);
-	}
+//	public IntervalTree<GTFterm> getExonTreeNew(){
+//		return(this.exonTree);
+//	}
 }

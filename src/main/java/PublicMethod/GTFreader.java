@@ -18,13 +18,16 @@ public class GTFreader {
 
         int exonNum=0;
         int geneNum=0;
+        int transNum=0;
         int ChrNum=0;
         HashMap<String, Chromosome2> chromeHM = new HashMap<String, Chromosome2>();
         HashSet<String> chrset=new HashSet<String>();
+        HashMap<String, Gene> geneHM = new HashMap<String, Gene>();
         BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader(gtf_file));
             Gene tempgene=null;
+            Transcript temptrans=null;
             Chromosome2 tempChrome=null;
             while (br.ready()) {
                 String str = br.readLine();
@@ -39,11 +42,17 @@ public class GTFreader {
                 }
                 if(gtFterm.getFeature().equals("gene")){
                     tempChrome.addGene(tempgene);
-                    tempgene=new Gene(gtFterm.getSpecificAttrbute("gene_id"),gtFterm.getStart(),gtFterm.getEnd(),str);
+                    tempgene=new Gene(str);
+                    geneHM.put(tempgene.getGeneId(),tempgene);
                     geneNum++;
 
+                }else if(gtFterm.getFeature().equals("transcript")){
+                    tempChrome.addGene(tempgene);
+                    temptrans=new Transcript(str);
+                    geneHM.get(temptrans.getGeneId()).addTranscript(temptrans.getTransId(),temptrans);
+
                 }else if (gtFterm.getFeature().equals("exon")){
-                    tempgene.AddExon(gtFterm);
+                    geneHM.get(temptrans.getGeneId()).AddExon(str);
                     exonNum++;
                 }
             }

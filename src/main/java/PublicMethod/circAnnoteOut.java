@@ -1,4 +1,4 @@
-package Annotation;
+package PublicMethod;
 
 /**
  * Created by likelet on 2020/1/19.
@@ -6,12 +6,14 @@ package Annotation;
 public class circAnnoteOut {
     private String left_gene="";
     private String left_transcript="";
-     String left_exonID="";
+    private String left_annote_type="";
+    String left_exonID="";
     private int left_exon_start;
     private int left_exon_end;
 
     private String right_gene="";
     private String right_transcript="";
+    private String right_annote_type="";
     private String right_exonID="";
     private int right_exon_start;
     private int right_exon_end;
@@ -132,44 +134,51 @@ public class circAnnoteOut {
         this.right_exon_end = right_exon_end;
     }
 
+
+    public void setleftExon(Exon exon ){
+        this.left_exonID=exon.getExonId();
+        this.left_exon_start=exon.getStart();
+        this.left_exon_end=exon.getEnd();
+    }
+
+    public void setRightExon(Exon exon ){
+        this.right_exonID=exon.getExonId();
+        this.right_exon_start=exon.getStart();
+        this.right_exon_end=exon.getEnd();
+    }
+
+    public String getLeft_annote_type() {
+        return left_annote_type;
+    }
+
+    public void setLeft_annote_type(String left_annote_type) {
+        this.left_annote_type = left_annote_type;
+    }
+
+    public String getRight_annote_type() {
+        return right_annote_type;
+    }
+
+    public void setRight_annote_type(String right_annote_type) {
+        this.right_annote_type = right_annote_type;
+    }
+
     @Override
     public String toString() {
         String str="";
-        if(left_gene==""){
-            str="Intergenic" + '\t' +
-                    left_transcript + '\t' +
-                    left_exonID + '\t' +
-                    left_exon_start +'\t' +
-                    left_exon_end +'\t' +
-                    right_gene + '\t' +
-                    right_transcript + '\t' +
-                    right_exonID + '\t' +
-                    right_exon_start + '\t' +
-                    right_exon_end;
-        }else if(right_gene==""){
-            str=left_gene + '\t' +
-                    left_transcript + '\t' +
-                    left_exonID + '\t' +
-                    left_exon_start +'\t' +
-                    left_exon_end +'\t' +
-                    "Intergenic" + '\t' +
-                    right_transcript + '\t' +
-                    right_exonID + '\t' +
-                    right_exon_start + '\t' +
-                    right_exon_end;
-        }else{
-            str=left_gene + '\t' +
-                    left_transcript + '\t' +
-                    left_exonID + '\t' +
-                    left_exon_start +'\t' +
-                    left_exon_end +'\t' +
-                    right_gene + '\t' +
-                    right_transcript + '\t' +
-                    right_exonID + '\t' +
-                    right_exon_start + '\t' +
-                    right_exon_end;
-        }
 
+        str=left_gene + '\t' +
+                left_annote_type + '\t' +
+                    left_transcript + '\t' +
+                    left_exonID + '\t' +
+                    left_exon_start +'\t' +
+                    left_exon_end +'\t' +
+                right_annote_type + '\t' +
+                    right_gene + '\t' +
+                    right_transcript + '\t' +
+                    right_exonID + '\t' +
+                    right_exon_start + '\t' +
+                    right_exon_end;
         return str;
     }
 }

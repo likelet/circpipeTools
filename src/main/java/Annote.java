@@ -125,20 +125,20 @@ public class Annote {
 	 * @param exon using UTR object
 	 */
 	public void setUTR(Exon exon) {
-		StringBuffer temp = new StringBuffer();
-		boolean strand = exon.getScript().getGene().getStrand() == '+';
-		if (this.getFeature() != null && this.getFeature().contains("CDS")) {
-			temp.append("CDS,");
-		}
-		strand ^= Math.abs(exon.getStart() - exon.getScript().getStart()) > Math.abs(exon.getScript().getEnd() - exon.getEnd());
-		if (strand) {
-			temp.append("5'");
-		}
-		else {
-			temp.append("3'");
-		}
-		temp.append("UTR");
-		this.feature = temp.toString();
+//		StringBuffer temp = new StringBuffer();
+//		boolean strand = exon.getScript().getGene().getStrand() == '+';
+//		if (this.getFeature() != null && this.getFeature().contains("CDS")) {
+//			temp.append("CDS,");
+//		}
+//		strand ^= Math.abs(exon.getStart() - exon.getScript().getStart()) > Math.abs(exon.getScript().getEnd() - exon.getEnd());
+//		if (strand) {
+//			temp.append("5'");
+//		}
+//		else {
+//			temp.append("3'");
+//		}
+//		temp.append("UTR");
+//		this.feature = temp.toString();
 	}
 	/**
 	 * write CDS in proper position of the feature

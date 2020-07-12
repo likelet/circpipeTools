@@ -5,51 +5,49 @@ import PublicMethod.Gene;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Transcript {
+public class Transcript extends GTFterm{
 
-	private String id=null;
-	private String type=null;
-	private int start=0;
-	private int end=0;
-	private ArrayList<Exon> exons=null;
-	private ArrayList<Exon> utrs=null;
-	private ArrayList<Exon> cdss=null;
-	private Gene gene=null;
-	public Transcript(String id, String type, int start, int end, ArrayList<Exon> exons, ArrayList<Exon> utrs, ArrayList<Exon> cdss, Gene gene) {
-		super();
-		this.id = id;
-		this.type = type;
-		this.start = start;
-		this.end = end;
-		this.exons = exons;
-		this.utrs = utrs;
-		this.cdss = cdss;
-		this.gene = gene;
+	private String transId=null;
+	private String transType=null;
+	private String geneId=null;
+
+	private ArrayList<Exon> exons=new ArrayList<Exon> ();
+	private ArrayList<Exon> utrs=new ArrayList<Exon> ();
+	private ArrayList<Exon> cdss=new ArrayList<Exon> ();
+
+
+	public Transcript(String str){
+		super(str);
+		this.geneId=this.getSpecificAttrbute("gene_id");
+		this.transId=this.getSpecificAttrbute("transcript_id");
+		this.transType=this.getSpecificAttrbute("transcript_type");
 	}
-	public String getId() {
-		return id;
+
+
+	public String getTransId() {
+		return transId;
 	}
-	public void setId(String id) {
-		this.id = id;
+
+	public void setTransId(String transId) {
+		this.transId = transId;
 	}
-	public String getType() {
-		return type;
+
+	public String getTransType() {
+		return transType;
 	}
-	public void setType(String type) {
-		this.type = type;
+
+	public void setTransType(String transType) {
+		this.transType = transType;
 	}
-	public int getStart() {
-		return start;
+
+	public String getGeneId() {
+		return geneId;
 	}
-	public void setStart(int start) {
-		this.start = start;
+
+	public void setGeneId(String geneId) {
+		this.geneId = geneId;
 	}
-	public int getEnd() {
-		return end;
-	}
-	public void setEnd(int end) {
-		this.end = end;
-	}
+
 	public ArrayList<Exon> getExons() {
 		return exons;
 	}
@@ -68,12 +66,19 @@ public class Transcript {
 	public void setCdss(ArrayList<Exon> cdss) {
 		this.cdss = cdss;
 	}
-	public Gene getGene() {
-		return gene;
+
+
+
+	public void addExon(Exon exon){
+		this.exons.add(exon);
 	}
-	public void setGene(Gene gene) {
-		this.gene = gene;
+	public void addCDS(Exon cds){
+		this.cdss.add(cds);
 	}
+	public void addutr(Exon utr){
+		this.utrs.add(utr);
+	}
+
 
 	/**
 	 * sort exons from whether less to greater
@@ -158,5 +163,15 @@ public class Transcript {
 				}
 			}
 		}
+	}
+
+	public Exon getAnnotedExon(int pos){
+		for (Exon exon: this.getExons()
+			 ) {
+			if(exon.getStart()>=pos && exon.getEnd()<=pos){
+				return(exon);
+			}
+		}
+		return null;
 	}
 }

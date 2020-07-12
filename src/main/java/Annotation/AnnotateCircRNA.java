@@ -2,8 +2,12 @@ package Annotation;
 
 import PublicMethod.*;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.logging.Logger;
 
 /**
  * Created by likelet on 2020/1/19.
@@ -13,7 +17,7 @@ public class AnnotateCircRNA {
 
 
 
-    public void batchAnnotationGTF(ArrayList<CircleRNAannotationTerm> circBedlist, HashMap<String, Chromosome2> gffmap){
+    public void batchAnnotationGTF(ArrayList<CircleRNAannotationTerm> circBedlist, HashMap<String, Chromosome2> gffmap, String outfile){
 
         Chromosome2 chr=null;
         for (CircleRNAannotationTerm cirBed:circBedlist) {
@@ -21,133 +25,82 @@ public class AnnotateCircRNA {
                 System.out.println(cirBed.getChr()+" not in the gtf file!, please check the consistency between you genome and gtf files");
             }
             chr = gffmap.get(cirBed.getChr());
-
+            System.out.println("Annotating");
             this.Annote(cirBed,chr);
 
-           // System.out.println(cirBed +"\t"+ this.OutputRender(res));
-        }
 
+        }
+        this.writeOut(circBedlist,outfile);
     }
 
 
     public void Annote(CircleRNAannotationTerm circlebed, Chromosome2 chr){
-        HashMap<String, GTFterm> annoteMap=new HashMap<String, GTFterm> ();
+
         GTFterm annoteExonLeft=null;
         GTFterm annoteExonRight=null;
+        boolean left_annotated=false;
+        boolean right_annotated=false;
 
         //left pos
         // +1 if for input as  bed format and the annotation is gtf format which is 1-based
         int start=circlebed.getStart()+1;
         int end= circlebed.getStart()+2;
+//        Gene gene1=null;
+//        Gene gene2=null;
+        System.out.print(circlebed.getName()+"\t");
         if(chr.getGeneTree().minOverlapper(start,end)!=null){
-            Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
-            if(annoteGeneLeft.getExonTreeNew().minOverlapper(start,end)!=null){
-                annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
-            }
-        }
+            left_annotated=true;
 
+            Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
+            System.out.print("left annotated " + annoteGeneLeft.getGeneSymbol() + "\t");
+            circlebed.addGeneLeft(annoteGeneLeft);
+        }
 
         //right pos
         // +1 if input are bed format
         start=circlebed.getEnd()+1;
-        end= circlebed.getEnd()+20;
+        end= circlebed.getEnd()+2;
 
         if(chr.getGeneTree().minOverlapper(start,end)!=null){
+            right_annotated=true;
+
             Gene annoteGeneRight=chr.getGeneTree().minOverlapper(start,end).getValue();
-            if(annoteGeneRight.getExonTreeNew().minOverlapper(start,end)!=null){
-                annoteExonRight=annoteGeneRight.getExonTreeNew().minOverlapper(start,end).getValue();
-            }
+            System.out.println("Right annotated " + annoteGeneRight.getGeneSymbol());
+            circlebed.addGeneRight(annoteGeneRight);
         }
 
-
-
-        annoteMap.put("left",annoteExonLeft);
-        annoteMap.put("right",annoteExonRight);
-
-
-
-    }
-
-    public HashMap<String, GTFterm> AnnoteNonBed(Bed6P circlebed, Chromosome2 chr){
-        HashMap<String, GTFterm> annoteMap=new HashMap<String, GTFterm> ();
-        GTFterm annoteExonLeft=null;
-        GTFterm annoteExonRight=null;
-        //left pos
-        // +1 if input are bed format
-        int start=circlebed.getStart();
-        int end= circlebed.getStart()+1;
-
-        if(chr.getGeneTree().minOverlapper(start,end)!=null){
-            Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
-            if(annoteGeneLeft.getExonTreeNew().minOverlapper(start,end)!=null){
-                annoteExonLeft=annoteGeneLeft.getExonTreeNew().minOverlapper(start,end).getValue();
-            }
+        if(!left_annotated && !right_annotated ){
+            circlebed.setAnnotateStr("Intergenic");
         }
 
-
-        //right pos
-        // +1 if input are bed format
-        start=circlebed.getEnd();
-        end= circlebed.getEnd()+1;
-
-        if(chr.getGeneTree().minOverlapper(start,end)!=null){
-            Gene annoteGeneRight=chr.getGeneTree().minOverlapper(start,end).getValue();
-            if(annoteGeneRight.getExonTreeNew().minOverlapper(start,end)!=null){
-                annoteExonRight=annoteGeneRight.getExonTreeNew().minOverlapper(start,end).getValue();
-            }
-        }
-
-
-        annoteMap.put("left",annoteExonLeft);
-        annoteMap.put("right",annoteExonRight);
-
-        return annoteMap;
-    }
-
-    public String OutputRender(HashMap<String, GTFterm> annoteMap){
-        GTFterm annoteExonLeft=annoteMap.get("left");
-        GTFterm annoteExonRight = annoteMap.get("right");
-        circAnnoteOut cot=null;
-        if(annoteExonLeft==null && annoteExonRight==null ){
-            return "All intergenic";
-        }else if (annoteExonLeft==null){
-            cot =new circAnnoteOut();
-            cot.setRight_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
-            cot.setRight_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
-            cot.setRight_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
-            cot.setRight_exon_start(annoteExonRight.getStart());
-            cot.setRight_exon_end(annoteExonRight.getEnd());
-
-        }else if (annoteExonRight ==null){
-            cot=new circAnnoteOut();
-            cot.setLeft_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
-            cot.setLeft_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
-            cot.setLeft_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
-            cot.setLeft_exon_start(annoteExonRight.getStart());
-            cot.setLeft_exon_end(annoteExonRight.getEnd());
-        }else {
-
-            cot = new circAnnoteOut();
-            cot.setRight_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
-            cot.setRight_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
-            cot.setRight_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
-            cot.setRight_exon_start(annoteExonRight.getStart());
-            cot.setRight_exon_end(annoteExonRight.getEnd());
-            cot.setLeft_gene(annoteExonRight.getSpecificAttrbute("gene_id"));
-            cot.setLeft_transcript(annoteExonRight.getSpecificAttrbute("transcript_id"));
-            cot.setLeft_exonID(annoteExonRight.getSpecificAttrbute("exon_number"));
-            cot.setLeft_exon_start(annoteExonRight.getStart());
-            cot.setLeft_exon_end(annoteExonRight.getEnd());
-        }
-        return cot.toString();
+        circlebed.getBestAnnotation();
     }
 
 
-    //public static void main(String[] args) {
-      //  HashMap<String, Chromosome2> gffmap = GTFreader.readGTF("/Users/likelet/IdeaProjects/TMPDIR/hg19_chr2.gencode.annotation.gtf");
-       // ArrayList<Bed6P> bedlist= BEDreader.bedreaderToList("/Users/likelet/IdeaProjects/TMPDIR/circpipeTools/pos20190317_modify_ciri.candidates.bed");
-       // new AnnotateCircRNA().batchAnnotation(bedlist, gffmap);
-    //}
+
+    public void writeOut(ArrayList<CircleRNAannotationTerm> circBedlist, String oufile){
+        FileWriter fw;
+        try {
+            fw = new FileWriter(new File(oufile));
+            for (CircleRNAannotationTerm circOut:circBedlist
+                 ) {
+                fw.append(circOut.toString()+"\n");
+            }
+
+            fw.flush();
+            fw.close();
+        } catch (IOException ex) {
+            Logger.getLogger("IOException");
+        }
+    }
+
+
+    public static void main(String[] args) {
+        HashMap<String, Chromosome2> gffmap = GTFreader.readGTF("/Users/likelet/IdeaProjects/test/hg19_chr2.gencode.annotation.gtf");
+        ArrayList<CircleRNAannotationTerm> bedlist= BEDreader.bedreaderToCircAnnotationList("/Users/likelet/IdeaProjects/test/test_annotation.bed");
+        AnnotateCircRNA ann= new AnnotateCircRNA();
+        ann.batchAnnotationGTF(bedlist, gffmap,"/Users/likelet/IdeaProjects/test/test_annotation_res.bed");
+    }
 
 
 

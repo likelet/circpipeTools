@@ -185,7 +185,7 @@ public class CircpipeTools {
 
 
             //run annotation function
-            GTFanalysis.run(in_file, gtf_file, proper_file, out_file, cds_first);
+            //GTFanalysis.run(in_file, gtf_file, proper_file, out_file, cds_first);
 
             Check c = new Check();
             c.dev = dev;

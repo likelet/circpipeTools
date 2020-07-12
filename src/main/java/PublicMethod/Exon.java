@@ -1,33 +1,51 @@
 package PublicMethod;
 
-public class Exon {
+public class Exon extends GTFterm{
 	
-	private String id=null;
-	private int start=0;
-	private int end=0;
-	private Transcript script=null;
-	public String getId() {
-		return id;
+	private String exonId=null;
+	private int exonNumber;
+
+	private String scriptId=null;
+	private String geneId=null;
+
+	public Exon(String str) {
+		super(str);
+		this.exonId=this.getSpecificAttrbute("exon_id");
+		this.exonNumber=Integer.parseInt(this.getSpecificAttrbute("exon_number"));
+		this.geneId=this.getSpecificAttrbute("gene_id");
+		this.scriptId=this.getSpecificAttrbute("transcript_id");
 	}
-	public void setId(String id) {
-		this.id = id;
+
+
+	public String getExonId() {
+		return exonId;
 	}
-	public int getStart() {
-		return start;
+
+	public void setExonId(String exonId) {
+		this.exonId = exonId;
 	}
-	public void setStart(int start) {
-		this.start = start;
+
+	public int getExonNumber() {
+		return exonNumber;
 	}
-	public int getEnd() {
-		return end;
+
+	public void setExonNumber(int exonNumber) {
+		this.exonNumber = exonNumber;
 	}
-	public void setEnd(int end) {
-		this.end = end;
+
+	public String getScriptId() {
+		return scriptId;
 	}
-	public Transcript getScript() {
-		return script;
+
+	public void setScriptId(String scriptId) {
+		this.scriptId = scriptId;
 	}
-	public void setScript(Transcript script) {
-		this.script = script;
+
+	public String getGeneId() {
+		return geneId;
+	}
+
+	public void setGeneId(String geneId) {
+		this.geneId = geneId;
 	}
 }
