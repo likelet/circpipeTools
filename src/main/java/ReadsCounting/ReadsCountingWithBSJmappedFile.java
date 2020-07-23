@@ -347,7 +347,7 @@ public class ReadsCountingWithBSJmappedFile {
             fw = new FileWriter(new File(outfile));
             fw.append("readId\tisReads1\tcircID\tqual_filter\tlinear_filter\talignment_filter\tBSJpass\tallbampass\tsamstr\r\n");
             for (String bsJreads : BSJhash.keySet()) {
-                if (BSJhash.get(bsJreads).getCircRNAid() == "chr8_145317001_145319518")
+
                     fw.append(BSJhash.get(bsJreads).toString() + "\r\n");
             }
             fw.flush();
@@ -365,7 +365,7 @@ public class ReadsCountingWithBSJmappedFile {
                 "/Users/likelet/test/circPlie/20200612C.bam",
                 "/Users/likelet/test/circPlie/20200612C.count");
         rj.runCountingWithFilter();
-        rj.writeOutUnpassedReads("/Users/likelet/test/circPlie/20200612C.reads.FP.txt");
+        //rj.writeOutUnpassedReads("/Users/likelet/test/circPlie/20200612C.reads.FP.txt");
 
     }
 

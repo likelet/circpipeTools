@@ -1,5 +1,6 @@
 
 
+import CollapseMatrixByMultipleTools.Multifile2Matrix.CombineFeatureCountmatrix.CombineFeatureCountRes;
 import CollapseMatrixByMultipleTools.RunCollapse;
 import PublicMethod.ToolsforCMD;
 import ReadsCounting.ExtractSoftReadsAndUnmappedReads;
@@ -66,7 +67,9 @@ public class CircpipeTools {
                     ToolsforCMD.print_ansi_GREEN("\t-collapse\t") + " Collapse circRNAs by different tools with frequencies: \n" +
                     ToolsforCMD.commandRender("java -jar circpipeTools.jar -collapse -dir [inputFilePath] -suffix [input File suffix] -out [output file name(forVen) ] -out2 [merge matrix out] \n") +
                     ToolsforCMD.print_ansi_GREEN("\t-MM\t") + " merge count file into a matrix, '-fixbase' could be used for convering 1-base to 0-base \n" +
-                    ToolsforCMD.commandRender("java -jar circpipeTools.jar -MM -dir [./] -suffix [.bed] -out [oufilename] <-fixbase>\n");
+                    ToolsforCMD.commandRender("java -jar circpipeTools.jar -MM -dir [./] -suffix [.bed] -out [oufilename] <-fixbase>\n")+
+                    ToolsforCMD.print_ansi_GREEN("\t-MF\t") + " merge Feature Count file into a matrix， parse 'gene.count' files" +
+                    ToolsforCMD.commandRender("java -jar circpipeTools.jar -MF -dir [./] -out [oufilename]\n");
             System.out.println(help);
             return;
         }
@@ -132,6 +135,14 @@ public class CircpipeTools {
             }
             mm.process();
             mm.writeout6();
+
+        } else if (args[0].equals("-MF")) {
+            String dir = FunctionClass.getArgsParameter(args, "-dir");
+
+            String outfile = FunctionClass.getArgsParameter(args, "-out");
+            CombineFeatureCountRes mm = new CombineFeatureCountRes(dir,outfile);
+
+            mm.process();
 
         } else {
             if (FunctionClass.getArgsParameter(args, "-dir") != null) {

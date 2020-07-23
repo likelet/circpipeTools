@@ -45,8 +45,7 @@ public class AnnotateCircRNA {
         // +1 if for input as  bed format and the annotation is gtf format which is 1-based
         int start=circlebed.getStart()+1;
         int end= circlebed.getStart()+2;
-//        Gene gene1=null;
-//        Gene gene2=null;
+
         System.out.print(circlebed.getName()+"\t");
         if(chr.getGeneTree().minOverlapper(start,end)!=null){
             left_annotated=true;
@@ -71,17 +70,19 @@ public class AnnotateCircRNA {
 
         if(!left_annotated && !right_annotated ){
             circlebed.setAnnotateStr("Intergenic");
+        }else{
+            circlebed.getBestAnnotation();
         }
 
-        circlebed.getBestAnnotation();
+
     }
 
 
 
-    public void writeOut(ArrayList<CircleRNAannotationTerm> circBedlist, String oufile){
+    public void writeOut(ArrayList<CircleRNAannotationTerm> circBedlist, String outfile){
         FileWriter fw;
         try {
-            fw = new FileWriter(new File(oufile));
+            fw = new FileWriter(new File(outfile));
             for (CircleRNAannotationTerm circOut:circBedlist
                  ) {
                 fw.append(circOut.toString()+"\n");
