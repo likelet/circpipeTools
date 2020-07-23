@@ -7,6 +7,7 @@ package PublicMethod;/*
 
 import javax.tools.Tool;
 import java.text.NumberFormat;
+import java.util.Calendar;
 
 /**
  * <p>
@@ -144,10 +145,7 @@ public class ToolsforCMD {
         return sb.toString();
     }
 
-    public static void main(String[] args) {
-        System.out.println(ToolsforCMD.print_ansi_CYAN("Bb"));
-        System.out.println(System.getProperty("os.name"));
-    }
+
     public static String commandRender(String str){
         String[] tempstr=str.split("\\s+");
         String outstr="\t";
@@ -165,4 +163,21 @@ public class ToolsforCMD {
         return outstr+"\n";
 
     }
+
+    public static String getVersionFromTime(){
+        Calendar cal=Calendar.getInstance();
+        int y=cal.get(Calendar.YEAR);
+        int m=cal.get(Calendar.MONTH);
+        int d=cal.get(Calendar.DATE);
+        int h=cal.get(Calendar.HOUR_OF_DAY);
+        int mi=cal.get(Calendar.MINUTE);
+        int s=cal.get(Calendar.SECOND);
+        return("version_"+y+"_"+m+"_"+d+"_"+h+"_"+mi+"_"+s);
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(ToolsforCMD.getVersionFromTime());
+    }
+
 }

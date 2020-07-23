@@ -30,6 +30,7 @@ public class CircpipeTools {
         boolean comm = false;
         boolean merge = false;
         boolean cds_first = true;
+        String version= "version_2020_6_23_17_21_1";
 
         // GLOABLE parameters
         if (FunctionClass.isContainParameter(args, "-gff")) {
@@ -57,6 +58,7 @@ public class CircpipeTools {
                     "\t-bsjbam\t remapped file with BSJ site\n" +
                     "\t-allbam\t bamfile with all reads map information\n" +
                     "\t-out\t output file name \n" +
+                    "\t-version\t view the version  \n" +
                     ToolsforCMD.print_ansi_YELLOW("Function And Command:\n ") +
                     ToolsforCMD.print_ansi_GREEN("\t-recount\t") + " count the reads in BSJ bamfile, --oh to set overhang for bsj  reads\n" +
                     ToolsforCMD.commandRender("java -jar circpipeTools.jar -recount -bsjbam [bsjbamfile] <-allbam [allbamfile]> -out [outfile name] <--paired>\n") +
@@ -68,7 +70,7 @@ public class CircpipeTools {
                     ToolsforCMD.commandRender("java -jar circpipeTools.jar -collapse -dir [inputFilePath] -suffix [input File suffix] -out [output file name(forVen) ] -out2 [merge matrix out] \n") +
                     ToolsforCMD.print_ansi_GREEN("\t-MM\t") + " merge count file into a matrix, '-fixbase' could be used for convering 1-base to 0-base \n" +
                     ToolsforCMD.commandRender("java -jar circpipeTools.jar -MM -dir [./] -suffix [.bed] -out [oufilename] <-fixbase>\n")+
-                    ToolsforCMD.print_ansi_GREEN("\t-MF\t") + " merge Feature Count file into a matrix， parse 'gene.count' files" +
+                    ToolsforCMD.print_ansi_GREEN("\t-MF\t") + " merge Feature Count file into a matrix， parse 'gene.count' files\n" +
                     ToolsforCMD.commandRender("java -jar circpipeTools.jar -MF -dir [./] -out [oufilename]\n");
             System.out.println(help);
             return;
@@ -144,7 +146,10 @@ public class CircpipeTools {
 
             mm.process();
 
-        } else {
+        } else if (args[0].equals("-version")) {
+            System.out.println("The current version if circpipetools is "+version);
+
+        }else {
             if (FunctionClass.getArgsParameter(args, "-dir") != null) {
                 inputDir = FunctionClass.getArgsParameter(args, "-dir");
             }

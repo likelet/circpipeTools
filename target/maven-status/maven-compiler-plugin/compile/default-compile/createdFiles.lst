@@ -1,5 +1,8 @@
+ReadsCounting/BSJreads.class
 extractSequences/TranscriptRecord.class
 PublicMethod/Chromosome2.class
+ReadsCounting/SAMRecordUtil$1.class
+CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/Multifile2matrix.class
 extractSequences/ChromosomeRecord.class
 FilelistReader.class
 ReadsCounting/SAMRecordUtil.class
@@ -7,12 +10,13 @@ extractSequences/GeneRecord.class
 CollapseMatrixByMultipleTools/OverLapTerm.class
 PublicMethod/Exon.class
 PublicMethod/Gene.class
-Annotation/CancerCircDB.class
+PublicMethod/CircleRNAannotationTerm.class
 PublicMethod/Record.class
 PublicMethod/Transcript.class
-Annotation/CircBaseTerm.class
 Annote.class
+PublicMethod/circAnnoteOut.class
 Check.class
+CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/CombineFeatureCountRes.class
 extractSequences/FeatureRecord.class
 PublicMethod/Chromosome.class
 PublicMethod/ToolsforCMD.class
@@ -22,10 +26,10 @@ mergeMatrix/Multifile2matrix.class
 mergeMatrix/MyFilenameFilter.class
 extractSequences/TwoBitParser.class
 mergeMatrix/FilelistReader.class
+PublicMethod/FilelistReader.class
 PublicMethod/GTFreader.class
 ReadsCounting/ReadsCountingWithBSJmappedFile.class
 removeDuplicateCircle/removeDuplicatesCircRNA.class
-GTFanalysis.class
 extractSequences/GeneAttribute.class
 PublicMethod/Method.class
 Annotation/AnnotateCircRNA.class
@@ -34,6 +38,7 @@ ReadsCounting/BSJcountIterm.class
 extractSequences/CircleRNAPipe.class
 CircpipeTools.class
 PublicMethod/BEDreader.class
-Annotation/circAnnoteOut.class
+ReadsCounting/FunctionClass.class
+ReadsCounting/ExtractSoftReadsAndUnmappedReads.class
 PublicMethod/Bed6P.class
 PublicMethod/GTFterm.class

@@ -4,8 +4,8 @@ package PublicMethod;
 import java.util.HashMap;
 
 
-import com.sun.tools.javah.Gen;
-import htsjdk.samtools.util.IntervalTree;
+
+
 
 public class Gene extends GTFterm{
 	
