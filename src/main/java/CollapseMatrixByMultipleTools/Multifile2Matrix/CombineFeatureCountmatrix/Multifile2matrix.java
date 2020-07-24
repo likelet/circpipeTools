@@ -127,7 +127,9 @@ public class Multifile2matrix {
         try {
             br = new BufferedReader(new FileReader(file));
             while (br.ready()) {
-                String[] str = br.readLine().split("\t");
+                String tempstr=br.readLine();
+                if(tempstr.startsWith("#")) continue;
+                String[] str = tempstr.split("\t");
 //                System.out.println(str.length);
                 if (str.length < this.colnumber) {
                     System.out.println(file + " exceed maxcol error!");

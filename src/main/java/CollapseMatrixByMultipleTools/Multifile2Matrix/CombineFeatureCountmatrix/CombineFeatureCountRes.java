@@ -49,17 +49,17 @@ public class CombineFeatureCountRes {
             fw.append("ID\t");
             for (Iterator it = filelist.iterator(); it.hasNext();) {
                 String tempstr = (String) it.next();
-                fw.append(tempstr + "\t");
+                tempstr=new File(tempstr).getName().replace(".gene.count","");
+                fw.append(tempstr+ "\t");
             }
             fw.append("\r\n");
             for (Iterator it1 = allIterm.iterator(); it1.hasNext();) {
                 String rowstr = (String) it1.next();
-
-                String tempstr2 = "";
+                fw.append(rowstr+"\t");
                 for (int i = 0; i < filehashstr.get(rowstr).size(); i++) {
-                    tempstr2 = filehashstr.get(rowstr).get(i)+"\t";
+                    fw.append(filehashstr.get(rowstr).get(i)+"\t");
                 }
-                fw.append(tempstr2 + "\r\n");
+                fw.append("\r\n");
             }
             fw.flush();
             fw.close();
@@ -68,4 +68,7 @@ public class CombineFeatureCountRes {
         }
 
     }
+
+
+
 }
