@@ -46,20 +46,22 @@ public class CombineFeatureCountRes {
         try {
             fw = new FileWriter(new File(outfile));
 
-            fw.append("ID\t");
+            String  fwstr="ID\t";
             for (Iterator it = filelist.iterator(); it.hasNext();) {
                 String tempstr = (String) it.next();
                 tempstr=new File(tempstr).getName().replace(".gene.count","");
-                fw.append(tempstr+ "\t");
+                fwstr=fwstr+tempstr+ "\t";
             }
-            fw.append("\r\n");
+            fwstr=fwstr.substring(0,fwstr.length()-1);
+            fw.append(fwstr+"\r\n");
             for (Iterator it1 = allIterm.iterator(); it1.hasNext();) {
                 String rowstr = (String) it1.next();
-                fw.append(rowstr+"\t");
+                rowstr=rowstr+"\t";
                 for (int i = 0; i < filehashstr.get(rowstr).size(); i++) {
-                    fw.append(filehashstr.get(rowstr).get(i)+"\t");
+                    rowstr=rowstr+filehashstr.get(rowstr).get(i)+"\t";
                 }
-                fw.append("\r\n");
+                rowstr=rowstr.substring(0,rowstr.length()-1);
+                fw.append(rowstr+"\r\n");
             }
             fw.flush();
             fw.close();
