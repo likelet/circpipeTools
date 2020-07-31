@@ -30,7 +30,7 @@ public class CircpipeTools {
         boolean comm = false;
         boolean merge = false;
         boolean cds_first = true;
-        String version= "version_2020_7_23_17_21_1";
+        String version= "version_2020_6_31_10_2_56";
 
         // GLOABLE parameters
         if (FunctionClass.isContainParameter(args, "-gff")) {
@@ -61,7 +61,7 @@ public class CircpipeTools {
                     "\t-version\t view the version  \n" +
                     ToolsforCMD.print_ansi_YELLOW("Function And Command:\n ") +
                     ToolsforCMD.print_ansi_GREEN("\t-recount\t") + " count the reads in BSJ bamfile, --oh to set overhang for bsj  reads\n" +
-                    ToolsforCMD.commandRender("java -jar circpipeTools.jar -recount -bsjbam [bsjbamfile] <-allbam [allbamfile]> -out [outfile name] <--paired>\n") +
+                    ToolsforCMD.commandRender("java -jar circpipeTools.jar -recount -bsjbam [bsjbamfile] -allbam [allbamfile] -out [outfile name] <--paired>\n") +
                     ToolsforCMD.print_ansi_GREEN("\t-extract\t") + " extract sequence from BSJ site\n" +
                     ToolsforCMD.commandRender("java -jar circpipeTools.jar -extract [bed] [GTF] [genome.bt] \n") +
                     ToolsforCMD.print_ansi_GREEN("\t-softclip\t") + " get softclip reads or unmapped reads \n" +
@@ -87,26 +87,13 @@ public class CircpipeTools {
             String bsjbam = FunctionClass.getArgsParameter(args, "-bsjbam");
             String outfile = FunctionClass.getArgsParameter(args, "-out");
             ReadsCountingWithBSJmappedFile rj = null;
-            if (FunctionClass.isContainParameter(args, "-allbam")) {
-                String allbam = FunctionClass.getArgsParameter(args, "-allbam");
-                rj = new ReadsCountingWithBSJmappedFile(bsjbam, allbam, outfile);
-                if (FunctionClass.isContainParameter(args, "--oh")) {
+            String allbam = FunctionClass.getArgsParameter(args, "-allbam");
+            rj = new ReadsCountingWithBSJmappedFile(bsjbam, allbam, outfile);
+            if (FunctionClass.isContainParameter(args, "--oh")) {
                     rj.overHanglength = Integer.parseInt(FunctionClass.getArgsParameter(args, "--oh"));
-                }
-                rj.runCountingWithFilter();
-            } else {
-                if (FunctionClass.isContainParameter(args, "--oh")) {
-                    rj.overHanglength = Integer.parseInt(FunctionClass.getArgsParameter(args, "--oh"));
-                }
-                rj = new ReadsCountingWithBSJmappedFile(bsjbam, outfile);
-
-                //run analysis
-                if (FunctionClass.isContainParameter(args, "--paired")) {
-                    rj.runAnalysisPair();
-                } else {
-                    rj.runAnalysisSingle();
-                }
             }
+            rj.runCountingWithFilter();
+
 
 
         } else if (args[0].equals("-collapse")) {

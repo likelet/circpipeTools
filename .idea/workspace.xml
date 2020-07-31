@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8a431dbf-f5df-4647-ad1d-36b2d2038459" name="Default" comment="update recounting algorithm">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/CombineFeatureCountRes.java" afterPath="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/CombineFeatureCountRes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CircpipeTools.java" afterPath="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" afterPath="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java" afterPath="$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java" afterPath="$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,84 +22,47 @@
       <file leaf-file-name="CircleRNAannotationTerm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/CircleRNAannotationTerm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="-6729">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="method#CircleRNAannotationTerm#0;class#CircleRNAannotationTerm#0" expanded="false" />
-                <element signature="e#1240#1241#0" expanded="false" />
-                <element signature="e#1278#1279#0" expanded="false" />
-                <element signature="e#1361#1362#0" expanded="false" />
-                <element signature="e#1405#1406#0" expanded="false" />
                 <element signature="method#CircleRNAannotationTerm#3;class#CircleRNAannotationTerm#0" expanded="false" />
-                <element signature="e#1661#1662#0" expanded="false" />
-                <element signature="e#1687#1688#0" expanded="false" />
-                <element signature="e#1749#1750#0" expanded="false" />
-                <element signature="e#1792#1793#0" expanded="false" />
-                <element signature="e#1853#1854#0" expanded="false" />
-                <element signature="e#1896#1897#0" expanded="false" />
-                <element signature="e#2221#2222#0" expanded="false" />
-                <element signature="e#2255#2256#0" expanded="false" />
-                <element signature="e#2309#2310#0" expanded="false" />
-                <element signature="e#2355#2356#0" expanded="false" />
-                <element signature="e#2419#2420#0" expanded="false" />
-                <element signature="e#2459#2460#0" expanded="false" />
-                <element signature="e#2640#2641#0" expanded="false" />
-                <element signature="e#2675#2676#0" expanded="false" />
-                <element signature="e#2729#2730#0" expanded="false" />
-                <element signature="e#2777#2778#0" expanded="false" />
-                <element signature="e#2815#2816#0" expanded="false" />
-                <element signature="e#2851#2852#0" expanded="false" />
-                <element signature="e#2907#2908#0" expanded="false" />
-                <element signature="e#2957#2958#0" expanded="false" />
-                <element signature="e#12557#12558#0" expanded="false" />
-                <element signature="e#12589#12590#0" expanded="false" />
-                <element signature="e#12639#12640#0" expanded="false" />
-                <element signature="e#12681#12682#0" expanded="false" />
-                <element signature="e#12723#12724#0" expanded="false" />
-                <element signature="e#12761#12762#0" expanded="false" />
-                <element signature="e#12823#12824#0" expanded="false" />
-                <element signature="e#12877#12878#0" expanded="false" />
-                <element signature="e#12915#12916#0" expanded="false" />
-                <element signature="e#12949#12950#0" expanded="false" />
-                <element signature="e#13003#13004#0" expanded="false" />
-                <element signature="e#13049#13050#0" expanded="false" />
-                <element signature="e#13088#13089#0" expanded="false" />
-                <element signature="e#13126#13127#0" expanded="false" />
-                <element signature="e#13185#13186#0" expanded="false" />
-                <element signature="e#13239#13240#0" expanded="false" />
-                <element signature="e#13276#13277#0" expanded="false" />
-                <element signature="e#13312#13313#0" expanded="false" />
-                <element signature="e#13367#13368#0" expanded="false" />
-                <element signature="e#13417#13418#0" expanded="false" />
-                <element signature="e#13454#13455#0" expanded="false" />
-                <element signature="e#13487#13488#0" expanded="false" />
-                <element signature="e#13539#13540#0" expanded="false" />
-                <element signature="e#13583#13584#0" expanded="false" />
-                <element signature="e#13626#13627#0" expanded="false" />
-                <element signature="e#13665#13666#0" expanded="false" />
-                <element signature="e#13729#13730#0" expanded="false" />
-                <element signature="e#13785#13786#0" expanded="false" />
-                <element signature="e#13824#13825#0" expanded="false" />
-                <element signature="e#13859#13860#0" expanded="false" />
-                <element signature="e#13915#13916#0" expanded="false" />
-                <element signature="e#13963#13964#0" expanded="false" />
-                <element signature="e#14003#14004#0" expanded="false" />
-                <element signature="e#14042#14043#0" expanded="false" />
-                <element signature="e#14103#14104#0" expanded="false" />
-                <element signature="e#14159#14160#0" expanded="false" />
-                <element signature="e#14197#14198#0" expanded="false" />
-                <element signature="e#14234#14235#0" expanded="false" />
-                <element signature="e#14291#14292#0" expanded="false" />
-                <element signature="e#14343#14344#0" expanded="false" />
-                <element signature="e#14749#14750#0" expanded="false" />
-                <element signature="e#14788#14789#0" expanded="false" />
-                <element signature="e#14852#14853#0" expanded="false" />
-                <element signature="e#14908#14909#0" expanded="false" />
-                <element signature="e#14952#14953#0" expanded="false" />
-                <element signature="e#14992#14993#0" expanded="false" />
-                <element signature="e#15058#15059#0" expanded="false" />
-                <element signature="e#15116#15117#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSJreads.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJreads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1747">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtractSoftReadsAndUnmappedReads.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ExtractSoftReadsAndUnmappedReads.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="95" column="52" lean-forward="false" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadsCountingWithBSJmappedFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <folding>
+                <element signature="method#singleCounting#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+                <element signature="method#initialBSJoutHashMap#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+                <element signature="method#write#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+                <element signature="method#isMateMappedInCircle#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+                <element signature="method#isMateMappedInCircle#1;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -114,24 +80,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OverLapTerm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/OverLapTerm.java">
+      <file leaf-file-name="CircpipeTools.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1235#1236#0" expanded="false" />
-                <element signature="e#1277#1278#0" expanded="false" />
-                <element signature="e#2145#2146#0" expanded="false" />
-                <element signature="e#2175#2176#0" expanded="false" />
-                <element signature="e#2205#2206#0" expanded="false" />
-                <element signature="e#2231#2232#0" expanded="false" />
-                <element signature="e#2260#2261#0" expanded="false" />
-                <element signature="e#2288#2289#0" expanded="false" />
-                <element signature="e#2315#2316#0" expanded="false" />
-                <element signature="e#2341#2342#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="552">
+              <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,72 +121,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CombineFeatureCountRes.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CombineFeatureCountRes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/CombineFeatureCountRes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+            <state relative-caret-position="585">
+              <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CircpipeTools.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Gene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="e#624#625#0" expanded="false" />
-                <element signature="e#644#645#0" expanded="false" />
-                <element signature="e#685#686#0" expanded="false" />
-                <element signature="e#712#713#0" expanded="false" />
-                <element signature="e#746#747#0" expanded="false" />
-                <element signature="e#770#771#0" expanded="false" />
-                <element signature="e#819#820#0" expanded="false" />
-                <element signature="e#854#855#0" expanded="false" />
-                <element signature="e#886#887#0" expanded="false" />
-                <element signature="e#908#909#0" expanded="false" />
-                <element signature="e#953#954#0" expanded="false" />
-                <element signature="e#984#985#0" expanded="false" />
-                <element signature="e#1046#1047#0" expanded="false" />
-                <element signature="e#1077#1078#0" expanded="false" />
-                <element signature="e#1262#1263#0" expanded="false" />
-                <element signature="e#1293#1294#0" expanded="false" />
-                <element signature="e#1360#1361#0" expanded="false" />
-                <element signature="e#1413#1414#0" expanded="false" />
-                <element signature="e#1446#1447#0" expanded="false" />
-                <element signature="e#1463#1464#0" expanded="false" />
-                <element signature="e#1501#1502#0" expanded="false" />
-                <element signature="e#1522#1523#0" expanded="false" />
-                <element signature="e#3733#3734#0" expanded="false" />
-                <element signature="e#3767#3768#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilelistReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/FilelistReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -241,30 +136,22 @@
       <file leaf-file-name="ToolsforCMD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4176">
-              <caret line="179" column="57" lean-forward="false" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
+            <state relative-caret-position="849">
+              <caret line="176" column="5" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="181" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#4001#4002#0" expanded="false" />
-                <element signature="e#4049#4050#0" expanded="false" />
-                <element signature="e#6154#6155#0" expanded="false" />
-                <element signature="e#6222#6223#0" expanded="false" />
+                <element signature="e#6155#6156#0" expanded="true" />
+                <element signature="e#6223#6224#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chromosome2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/Chromosome2.java">
+      <file leaf-file-name="BSJcountIterm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#312#313#0" expanded="false" />
-                <element signature="e#351#352#0" expanded="false" />
-                <element signature="e#543#544#0" expanded="false" />
-                <element signature="e#574#575#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-129">
+              <caret line="56" column="54" lean-forward="true" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -284,6 +171,7 @@
       <find>count</find>
       <find>runCountingWithFilter</find>
       <find>colnumber</find>
+      <find>runA</find>
     </findStrings>
     <replaceStrings>
       <replace>geneSymbol</replace>
@@ -310,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/main/java/GTFanalysis.java" />
         <option value="$PROJECT_DIR$/../test/test_annotation_res.bed" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/GTFreader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/circAnnoteOut.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/CircleRNAannotationTerm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java" />
@@ -318,10 +205,12 @@
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/FilelistReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/Multifile2matrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/PublicMethod/Gene.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/Multifile2matrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/CombineFeatureCountRes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CircpipeTools.java" />
       </list>
     </option>
   </component>
@@ -475,7 +364,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PublicMethod" />
+              <option name="myItemId" value="ReadsCounting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,66 +391,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PublicMethod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CircleRNAannotationTerm.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="circpipeTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="circpipeTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollapseMatrixByMultipleTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="circpipeTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="circpipeTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollapseMatrixByMultipleTools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CombineFeatureCountmatrix" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CombineFeatureCountRes">
+  <component name="RunManager" selected="Application.ToolsforCMD">
     <configuration default="false" name="ReadsCountingWithBSJmappedFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
@@ -1031,11 +860,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CombineFeatureCountRes" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ToolsforCMD" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AnnotateCircRNA" />
-        <item index="3" class="java.lang.String" itemvalue="Maven.circpipetools [install]" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ReadsCountingWithBSJmappedFile" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ToolsforCMD" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ReadsCountingWithBSJmappedFile" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CombineFeatureCountRes" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AnnotateCircRNA" />
+        <item index="4" class="java.lang.String" itemvalue="Maven.circpipetools [install]" />
       </list>
     </recent_temporary>
   </component>
@@ -1080,35 +909,35 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.071875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35076427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35076427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984716" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1151,90 +980,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/CircleRNAannotationTerm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#CircleRNAannotationTerm#0;class#CircleRNAannotationTerm#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1278#1279#0" expanded="false" />
-            <element signature="e#1361#1362#0" expanded="false" />
-            <element signature="e#1405#1406#0" expanded="false" />
-            <element signature="method#CircleRNAannotationTerm#3;class#CircleRNAannotationTerm#0" expanded="false" />
-            <element signature="e#1661#1662#0" expanded="false" />
-            <element signature="e#1687#1688#0" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1792#1793#0" expanded="false" />
-            <element signature="e#1853#1854#0" expanded="false" />
-            <element signature="e#1896#1897#0" expanded="false" />
-            <element signature="e#2221#2222#0" expanded="false" />
-            <element signature="e#2255#2256#0" expanded="false" />
-            <element signature="e#2309#2310#0" expanded="false" />
-            <element signature="e#2355#2356#0" expanded="false" />
-            <element signature="e#2419#2420#0" expanded="false" />
-            <element signature="e#2459#2460#0" expanded="false" />
-            <element signature="e#2640#2641#0" expanded="false" />
-            <element signature="e#2675#2676#0" expanded="false" />
-            <element signature="e#2729#2730#0" expanded="false" />
-            <element signature="e#2777#2778#0" expanded="false" />
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2851#2852#0" expanded="false" />
-            <element signature="e#2907#2908#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="false" />
-            <element signature="e#12557#12558#0" expanded="false" />
-            <element signature="e#12589#12590#0" expanded="false" />
-            <element signature="e#12639#12640#0" expanded="false" />
-            <element signature="e#12681#12682#0" expanded="false" />
-            <element signature="e#12723#12724#0" expanded="false" />
-            <element signature="e#12761#12762#0" expanded="false" />
-            <element signature="e#12823#12824#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="false" />
-            <element signature="e#12915#12916#0" expanded="false" />
-            <element signature="e#12949#12950#0" expanded="false" />
-            <element signature="e#13003#13004#0" expanded="false" />
-            <element signature="e#13049#13050#0" expanded="false" />
-            <element signature="e#13088#13089#0" expanded="false" />
-            <element signature="e#13126#13127#0" expanded="false" />
-            <element signature="e#13185#13186#0" expanded="false" />
-            <element signature="e#13239#13240#0" expanded="false" />
-            <element signature="e#13276#13277#0" expanded="false" />
-            <element signature="e#13312#13313#0" expanded="false" />
-            <element signature="e#13367#13368#0" expanded="false" />
-            <element signature="e#13417#13418#0" expanded="false" />
-            <element signature="e#13454#13455#0" expanded="false" />
-            <element signature="e#13487#13488#0" expanded="false" />
-            <element signature="e#13539#13540#0" expanded="false" />
-            <element signature="e#13583#13584#0" expanded="false" />
-            <element signature="e#13626#13627#0" expanded="false" />
-            <element signature="e#13665#13666#0" expanded="false" />
-            <element signature="e#13729#13730#0" expanded="false" />
-            <element signature="e#13785#13786#0" expanded="false" />
-            <element signature="e#13824#13825#0" expanded="false" />
-            <element signature="e#13859#13860#0" expanded="false" />
-            <element signature="e#13915#13916#0" expanded="false" />
-            <element signature="e#13963#13964#0" expanded="false" />
-            <element signature="e#14003#14004#0" expanded="false" />
-            <element signature="e#14042#14043#0" expanded="false" />
-            <element signature="e#14103#14104#0" expanded="false" />
-            <element signature="e#14159#14160#0" expanded="false" />
-            <element signature="e#14197#14198#0" expanded="false" />
-            <element signature="e#14234#14235#0" expanded="false" />
-            <element signature="e#14291#14292#0" expanded="false" />
-            <element signature="e#14343#14344#0" expanded="false" />
-            <element signature="e#14749#14750#0" expanded="false" />
-            <element signature="e#14788#14789#0" expanded="false" />
-            <element signature="e#14852#14853#0" expanded="false" />
-            <element signature="e#14908#14909#0" expanded="false" />
-            <element signature="e#14952#14953#0" expanded="false" />
-            <element signature="e#14992#14993#0" expanded="false" />
-            <element signature="e#15058#15059#0" expanded="false" />
-            <element signature="e#15116#15117#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/GTFreader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -1358,8 +1103,8 @@
             <element signature="imports" expanded="false" />
             <element signature="e#4001#4002#0" expanded="false" />
             <element signature="e#4049#4050#0" expanded="false" />
-            <element signature="e#6154#6155#0" expanded="false" />
-            <element signature="e#6222#6223#0" expanded="false" />
+            <element signature="e#6155#6156#0" expanded="true" />
+            <element signature="e#6223#6224#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1370,81 +1115,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#CircleRNAannotationTerm#0;class#CircleRNAannotationTerm#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1278#1279#0" expanded="false" />
-            <element signature="e#1361#1362#0" expanded="false" />
-            <element signature="e#1405#1406#0" expanded="false" />
             <element signature="method#CircleRNAannotationTerm#3;class#CircleRNAannotationTerm#0" expanded="false" />
-            <element signature="e#1661#1662#0" expanded="false" />
-            <element signature="e#1687#1688#0" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1792#1793#0" expanded="false" />
-            <element signature="e#1853#1854#0" expanded="false" />
-            <element signature="e#1896#1897#0" expanded="false" />
-            <element signature="e#2221#2222#0" expanded="false" />
-            <element signature="e#2255#2256#0" expanded="false" />
-            <element signature="e#2309#2310#0" expanded="false" />
-            <element signature="e#2355#2356#0" expanded="false" />
-            <element signature="e#2419#2420#0" expanded="false" />
-            <element signature="e#2459#2460#0" expanded="false" />
-            <element signature="e#2640#2641#0" expanded="false" />
-            <element signature="e#2675#2676#0" expanded="false" />
-            <element signature="e#2729#2730#0" expanded="false" />
-            <element signature="e#2777#2778#0" expanded="false" />
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2851#2852#0" expanded="false" />
-            <element signature="e#2907#2908#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="false" />
-            <element signature="e#12557#12558#0" expanded="false" />
-            <element signature="e#12589#12590#0" expanded="false" />
-            <element signature="e#12639#12640#0" expanded="false" />
-            <element signature="e#12681#12682#0" expanded="false" />
-            <element signature="e#12723#12724#0" expanded="false" />
-            <element signature="e#12761#12762#0" expanded="false" />
-            <element signature="e#12823#12824#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="false" />
-            <element signature="e#12915#12916#0" expanded="false" />
-            <element signature="e#12949#12950#0" expanded="false" />
-            <element signature="e#13003#13004#0" expanded="false" />
-            <element signature="e#13049#13050#0" expanded="false" />
-            <element signature="e#13088#13089#0" expanded="false" />
-            <element signature="e#13126#13127#0" expanded="false" />
-            <element signature="e#13185#13186#0" expanded="false" />
-            <element signature="e#13239#13240#0" expanded="false" />
-            <element signature="e#13276#13277#0" expanded="false" />
-            <element signature="e#13312#13313#0" expanded="false" />
-            <element signature="e#13367#13368#0" expanded="false" />
-            <element signature="e#13417#13418#0" expanded="false" />
-            <element signature="e#13454#13455#0" expanded="false" />
-            <element signature="e#13487#13488#0" expanded="false" />
-            <element signature="e#13539#13540#0" expanded="false" />
-            <element signature="e#13583#13584#0" expanded="false" />
-            <element signature="e#13626#13627#0" expanded="false" />
-            <element signature="e#13665#13666#0" expanded="false" />
-            <element signature="e#13729#13730#0" expanded="false" />
-            <element signature="e#13785#13786#0" expanded="false" />
-            <element signature="e#13824#13825#0" expanded="false" />
-            <element signature="e#13859#13860#0" expanded="false" />
-            <element signature="e#13915#13916#0" expanded="false" />
-            <element signature="e#13963#13964#0" expanded="false" />
-            <element signature="e#14003#14004#0" expanded="false" />
-            <element signature="e#14042#14043#0" expanded="false" />
-            <element signature="e#14103#14104#0" expanded="false" />
-            <element signature="e#14159#14160#0" expanded="false" />
-            <element signature="e#14197#14198#0" expanded="false" />
-            <element signature="e#14234#14235#0" expanded="false" />
-            <element signature="e#14291#14292#0" expanded="false" />
-            <element signature="e#14343#14344#0" expanded="false" />
-            <element signature="e#14749#14750#0" expanded="false" />
-            <element signature="e#14788#14789#0" expanded="false" />
-            <element signature="e#14852#14853#0" expanded="false" />
-            <element signature="e#14908#14909#0" expanded="false" />
-            <element signature="e#14952#14953#0" expanded="false" />
-            <element signature="e#14992#14993#0" expanded="false" />
-            <element signature="e#15058#15059#0" expanded="false" />
-            <element signature="e#15116#15117#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1691,27 +1363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="172" column="32" lean-forward="false" selection-start-line="172" selection-start-column="18" selection-end-line="172" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ExtractSoftReadsAndUnmappedReads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/circAnnoteOut.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/RunCollapse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1769,30 +1420,6 @@
             <element signature="e#1522#1523#0" expanded="false" />
             <element signature="e#3733#3734#0" expanded="false" />
             <element signature="e#3767#3768#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4176">
-          <caret line="179" column="57" lean-forward="false" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4001#4002#0" expanded="false" />
-            <element signature="e#4049#4050#0" expanded="false" />
-            <element signature="e#6154#6155#0" expanded="false" />
-            <element signature="e#6222#6223#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1856,90 +1483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/CircleRNAannotationTerm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#CircleRNAannotationTerm#0;class#CircleRNAannotationTerm#0" expanded="false" />
-            <element signature="e#1240#1241#0" expanded="false" />
-            <element signature="e#1278#1279#0" expanded="false" />
-            <element signature="e#1361#1362#0" expanded="false" />
-            <element signature="e#1405#1406#0" expanded="false" />
-            <element signature="method#CircleRNAannotationTerm#3;class#CircleRNAannotationTerm#0" expanded="false" />
-            <element signature="e#1661#1662#0" expanded="false" />
-            <element signature="e#1687#1688#0" expanded="false" />
-            <element signature="e#1749#1750#0" expanded="false" />
-            <element signature="e#1792#1793#0" expanded="false" />
-            <element signature="e#1853#1854#0" expanded="false" />
-            <element signature="e#1896#1897#0" expanded="false" />
-            <element signature="e#2221#2222#0" expanded="false" />
-            <element signature="e#2255#2256#0" expanded="false" />
-            <element signature="e#2309#2310#0" expanded="false" />
-            <element signature="e#2355#2356#0" expanded="false" />
-            <element signature="e#2419#2420#0" expanded="false" />
-            <element signature="e#2459#2460#0" expanded="false" />
-            <element signature="e#2640#2641#0" expanded="false" />
-            <element signature="e#2675#2676#0" expanded="false" />
-            <element signature="e#2729#2730#0" expanded="false" />
-            <element signature="e#2777#2778#0" expanded="false" />
-            <element signature="e#2815#2816#0" expanded="false" />
-            <element signature="e#2851#2852#0" expanded="false" />
-            <element signature="e#2907#2908#0" expanded="false" />
-            <element signature="e#2957#2958#0" expanded="false" />
-            <element signature="e#12557#12558#0" expanded="false" />
-            <element signature="e#12589#12590#0" expanded="false" />
-            <element signature="e#12639#12640#0" expanded="false" />
-            <element signature="e#12681#12682#0" expanded="false" />
-            <element signature="e#12723#12724#0" expanded="false" />
-            <element signature="e#12761#12762#0" expanded="false" />
-            <element signature="e#12823#12824#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="false" />
-            <element signature="e#12915#12916#0" expanded="false" />
-            <element signature="e#12949#12950#0" expanded="false" />
-            <element signature="e#13003#13004#0" expanded="false" />
-            <element signature="e#13049#13050#0" expanded="false" />
-            <element signature="e#13088#13089#0" expanded="false" />
-            <element signature="e#13126#13127#0" expanded="false" />
-            <element signature="e#13185#13186#0" expanded="false" />
-            <element signature="e#13239#13240#0" expanded="false" />
-            <element signature="e#13276#13277#0" expanded="false" />
-            <element signature="e#13312#13313#0" expanded="false" />
-            <element signature="e#13367#13368#0" expanded="false" />
-            <element signature="e#13417#13418#0" expanded="false" />
-            <element signature="e#13454#13455#0" expanded="false" />
-            <element signature="e#13487#13488#0" expanded="false" />
-            <element signature="e#13539#13540#0" expanded="false" />
-            <element signature="e#13583#13584#0" expanded="false" />
-            <element signature="e#13626#13627#0" expanded="false" />
-            <element signature="e#13665#13666#0" expanded="false" />
-            <element signature="e#13729#13730#0" expanded="false" />
-            <element signature="e#13785#13786#0" expanded="false" />
-            <element signature="e#13824#13825#0" expanded="false" />
-            <element signature="e#13859#13860#0" expanded="false" />
-            <element signature="e#13915#13916#0" expanded="false" />
-            <element signature="e#13963#13964#0" expanded="false" />
-            <element signature="e#14003#14004#0" expanded="false" />
-            <element signature="e#14042#14043#0" expanded="false" />
-            <element signature="e#14103#14104#0" expanded="false" />
-            <element signature="e#14159#14160#0" expanded="false" />
-            <element signature="e#14197#14198#0" expanded="false" />
-            <element signature="e#14234#14235#0" expanded="false" />
-            <element signature="e#14291#14292#0" expanded="false" />
-            <element signature="e#14343#14344#0" expanded="false" />
-            <element signature="e#14749#14750#0" expanded="false" />
-            <element signature="e#14788#14789#0" expanded="false" />
-            <element signature="e#14852#14853#0" expanded="false" />
-            <element signature="e#14908#14909#0" expanded="false" />
-            <element signature="e#14952#14953#0" expanded="false" />
-            <element signature="e#14992#14993#0" expanded="false" />
-            <element signature="e#15058#15059#0" expanded="false" />
-            <element signature="e#15116#15117#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Annotation/AnnotateCircRNA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -1952,11 +1495,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CollapseMatrixByMultipleTools/Multifile2Matrix/CombineFeatureCountmatrix/CombineFeatureCountRes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+        <state relative-caret-position="585">
+          <caret line="57" column="52" lean-forward="true" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/CircleRNAannotationTerm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6729">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="method#CircleRNAannotationTerm#0;class#CircleRNAannotationTerm#0" expanded="false" />
+            <element signature="method#CircleRNAannotationTerm#3;class#CircleRNAannotationTerm#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1747">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ExtractSoftReadsAndUnmappedReads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="95" column="52" lean-forward="false" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/ReadsCountingWithBSJmappedFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <folding>
+            <element signature="method#singleCounting#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+            <element signature="method#initialBSJoutHashMap#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+            <element signature="method#write#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+            <element signature="method#isMateMappedInCircle#0;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+            <element signature="method#isMateMappedInCircle#1;class#ReadsCountingWithBSJmappedFile#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadsCounting/BSJcountIterm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="56" column="54" lean-forward="true" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PublicMethod/ToolsforCMD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="176" column="5" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="181" selection-end-column="5" />
+          <folding>
+            <element signature="e#6155#6156#0" expanded="true" />
+            <element signature="e#6223#6224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CircpipeTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

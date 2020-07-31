@@ -59,6 +59,7 @@ public class ReadsCountingWithBSJmappedFile {
         this.write();
     }
 
+    // deprecated
     public void runAnalysisPair() throws IOException {
         initialBSJoutHashMap();
         this.mateCounting();
@@ -133,7 +134,7 @@ public class ReadsCountingWithBSJmappedFile {
 
     }
 
-    // check whether the mated reads of BSJ reads located in the circRNA region
+    // check whether the mated reads of BSJ reads located in the circRNA region (deprecated)
     public boolean isMateMappedInCircle(BSJcountIterm bsjIterm, SamReader sr, String readsID) {
         boolean mark = false;
         SAMRecordIterator samit = sr.queryContained(bsjIterm.getChr(), bsjIterm.getStart(), bsjIterm.getEnd());
@@ -148,7 +149,7 @@ public class ReadsCountingWithBSJmappedFile {
         return mark;
     }
 
-    // check whether the mated reads of BSJ reads located in the circRNA region
+    // check whether the mated reads of BSJ reads located in the circRNA region (deprecated )
     public boolean isMateMappedInCircle(BSJcountIterm bsjIterm, SAMRecord rec) {
         int mateEnd = rec.getMateAlignmentStart() + rec.getReadLength();
         if (rec.getMateAlignmentStart() >= bsjIterm.getStart() && mateEnd <= bsjIterm.getEnd()) {

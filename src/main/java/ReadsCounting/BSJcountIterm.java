@@ -41,17 +41,29 @@ public class BSJcountIterm {
     
     
     protected void parseName(){
-//        String [] circIDstr=circID.split(":");
-//        chr=circIDstr[0];
-//
-//        start= Integer.parseInt(circIDstr[1].split("\\|")[0]);
-//        end= Integer.parseInt(circIDstr[1].split("\\|")[1]);
+        if(circID.contains(":")){
+            String [] circIDstr=circID.split(":");
+            chr=circIDstr[0];
+            start= Integer.parseInt(circIDstr[1].split("\\|")[0]);
+            end= Integer.parseInt(circIDstr[1].split("\\|")[1]);
+        }else{
+            String [] circIDstr=circID.split("_");
+            start= Integer.parseInt(circIDstr[circIDstr.length-3]);
+            end= Integer.parseInt(circIDstr[circIDstr.length-2]);
+            switch (circID.length()){
+                case 6:
+                    chr=circIDstr[0]+"_"+circIDstr[1]+"_"+circIDstr[2];
+                case 5:
+                    chr=circIDstr[0]+"_"+circIDstr[1];
+                case 4:
+                    chr=circIDstr[0];
 
-        String [] circIDstr=circID.split("_");
-        chr=circIDstr[0];
+            }
 
-        start= Integer.parseInt(circIDstr[1]);
-        end= Integer.parseInt(circIDstr[2]);
+
+        }
+
+
     }
 
     public String getChr() {
