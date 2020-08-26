@@ -23,19 +23,19 @@ public class removeDuplicatesCircRNA {
     private ArrayList<Bed6P> outBedList=new ArrayList<Bed6P>();
     public final String[] toolnames= {"ciri","circexplorer2","find_circ","mapsplice","segemehl"};
 
-    public removeDuplicatesCircRNA(ArrayList<String> filelist){
-        this.initialFileMap(filelist);
+    public removeDuplicatesCircRNA(ArrayList<String> filelist, String suffix){
+        this.initialFileMap(filelist,suffix);
 
         this.removeDupProcess();
         System.out.println(outBedList.size() + " records retained after deduplicate step");
     }
 
 
-    public void initialFileMap(ArrayList<String> filelist){
+    public void initialFileMap(ArrayList<String> filelist, String suffix){
         for (int i = 0; i < filelist.size(); i++) {
             File tempfile=new File(filelist.get(i));
             String filename=tempfile.getName();
-            String tempstr=filename.replace("_merge_temp.matrix","");
+            String tempstr=filename.replace(suffix,"");
 //            System.out.println(tempstr);
             file_map.put(tempstr,tempfile);
         }
@@ -117,7 +117,7 @@ public class removeDuplicatesCircRNA {
 
         ArrayList<String> filelist= FilelistReader.getFileArrayList( "/Users/likelet/test/circPlie/","_merge_temp.matrix");
 
-        removeDuplicatesCircRNA rd=new removeDuplicatesCircRNA(filelist);
+        removeDuplicatesCircRNA rd=new removeDuplicatesCircRNA(filelist,"_merge_temp.matrix");
         rd.write("/Users/likelet/test/circPlie/test.merge.txt");
 
     }

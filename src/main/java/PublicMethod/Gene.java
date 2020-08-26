@@ -155,6 +155,15 @@ public class Gene extends GTFterm{
 		}
 	}
 
+	public String getTransicrps(){
+		String str="";
+		for (String trans:this.getScripts().keySet()
+			 ) {
+			str+=trans+";";
+		}
+		return str;
+	}
+
 //	public IntervalTree<GTFterm> getExonTreeNew(){
 //		return(this.exonTree);
 //	}

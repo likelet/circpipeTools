@@ -53,6 +53,8 @@ public class AnnotateCircRNA {
             Gene annoteGeneLeft=chr.getGeneTree().minOverlapper(start,end).getValue();
             System.out.print("left annotated " + annoteGeneLeft.getGeneSymbol() + "\t");
             circlebed.addGeneLeft(annoteGeneLeft);
+        }else{
+            System.out.println("left annotated intergenic\t");
         }
 
         //right pos
@@ -66,6 +68,8 @@ public class AnnotateCircRNA {
             Gene annoteGeneRight=chr.getGeneTree().minOverlapper(start,end).getValue();
             System.out.println("Right annotated " + annoteGeneRight.getGeneSymbol());
             circlebed.addGeneRight(annoteGeneRight);
+        }else{
+            System.out.println("Right annotated: intergenic\t");
         }
 
         if(!left_annotated && !right_annotated ){

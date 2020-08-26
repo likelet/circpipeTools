@@ -30,7 +30,7 @@ public class CircpipeTools {
         boolean comm = false;
         boolean merge = false;
         boolean cds_first = true;
-        String version= "version_2020_6_31_10_2_56";
+        String version= "version_2020_7_25_16_48_55";
 
         // GLOABLE parameters
         if (FunctionClass.isContainParameter(args, "-gff")) {

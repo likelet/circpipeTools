@@ -170,4 +170,31 @@ public class Method {
 	}
 
 
+	public static String[] parseCircRNAName(String circID){
+		String[] cirIDstrout=new String[3];
+		if(circID.contains(":")){
+			String [] circIDstr=circID.split(":");
+			cirIDstrout[0]=circIDstr[0];
+			cirIDstrout[1]= circIDstr[1].split("\\|")[0];
+			cirIDstrout[2]= circIDstr[1].split("\\|")[1];
+		}else{
+			String [] circIDstr=circID.split("_");
+			cirIDstrout[1]= circIDstr[1].split("\\|")[0];
+			cirIDstrout[2]= circIDstr[1].split("\\|")[1];
+			switch (circID.length()){
+				case 6:
+					cirIDstrout[0]=circIDstr[0]+"_"+circIDstr[1]+"_"+circIDstr[2];
+				case 5:
+					cirIDstrout[0]=circIDstr[0]+"_"+circIDstr[1];
+				case 4:
+					cirIDstrout[0]=circIDstr[0];
+
+			}
+
+
+		}
+		return(cirIDstrout);
+
+	}
+
 }

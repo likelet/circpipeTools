@@ -206,8 +206,8 @@ public class CircleRNAannotationTerm extends Bed6P {
         String transID="";
         for (String transcripID: scoreset.keySet()) {
             int tempscore = scoreset.get(transcripID) ;
-            if(tempscore==0 || tempscore<biggest_score) continue; // escape transcript with no overlap
-            if(tempscore>biggest_score){
+            if( tempscore<biggest_score) continue; // escape transcript with no overlap
+            if(tempscore>=biggest_score){
                 biggest_score=scoreset.get(transcripID);
                 transID=transcripID;
             }
@@ -248,21 +248,27 @@ public class CircleRNAannotationTerm extends Bed6P {
             this.getCircAnnoteDetails().setLeft_transcript(transid1);
             this.getCircAnnoteDetails().setRight_transcript(transid2);
 
-            exonLeftanno=leftgene.getScripts().get(transid1).getAnnotedExon(super.getStart());
-            exonRightanno=rightgene.getScripts().get(transid2).getAnnotedExon(super.getEnd());
 
-            if(exonLeftanno==null){
-                this.getCircAnnoteDetails().setLeft_annote_type("intronic");
-            }else{
-                this.getCircAnnoteDetails().setLeft_annote_type("exonic");
-                this.getCircAnnoteDetails().setleftExon(exonLeftanno);
+            if(leftgene!=null){
+                exonLeftanno=leftgene.getScripts().get(transid1).getAnnotedExon(super.getStart());
+                if(exonLeftanno==null){
+                    this.getCircAnnoteDetails().setLeft_annote_type("intronic");
+                }else{
+                    exonLeftanno=leftgene.getScripts().get(transid1).getAnnotedExon(super.getStart());
+                    this.getCircAnnoteDetails().setLeft_annote_type("exonic");
+                    this.getCircAnnoteDetails().setleftExon(exonLeftanno);
+                }
             }
-            if(exonRightanno==null){
-                this.getCircAnnoteDetails().setRight_annote_type("intronic");
-            }else{
-                this.getCircAnnoteDetails().setleftExon(exonRightanno);
-                this.getCircAnnoteDetails().setRight_annote_type("exonic");
+            if(rightgene!=null){
+                exonRightanno=rightgene.getScripts().get(transid2).getAnnotedExon(super.getEnd());
+                if(exonRightanno==null){
+                    this.getCircAnnoteDetails().setRight_annote_type("intronic");
+                }else{
+                    this.getCircAnnoteDetails().setleftExon(exonRightanno);
+                    this.getCircAnnoteDetails().setRight_annote_type("exonic");
+                }
             }
+
 
 
         }
@@ -279,9 +285,11 @@ public class CircleRNAannotationTerm extends Bed6P {
 
     public String toString(){
         if(this.circAnnoteDetails.getLeft_annote_type()=="exonic" ||this.circAnnoteDetails.getRight_annote_type()=="exonic" ){
-            this.annotateStr="exonic";
+            this.annotateStr="Exonic";
         }else if(this.circAnnoteDetails.getLeft_annote_type()=="intronic" && this.circAnnoteDetails.getRight_annote_type()=="intronic"){
-            this.annotateStr="intronic";
+            this.annotateStr="Intronic";
+        }else if(this.circAnnoteDetails.getLeft_annote_type()!="intergenic" || this.circAnnoteDetails.getRight_annote_type()=="intergenic"){
+            this.annotateStr="Complicated";
         }
 
         String str=super.toString()+"\t"+annotateStr+"\t"+this.getCircAnnoteDetails().toString();

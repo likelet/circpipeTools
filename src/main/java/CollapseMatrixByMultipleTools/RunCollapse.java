@@ -32,16 +32,17 @@ public class RunCollapse {
                 HashMap<String, IntervalTree<ArrayList<Integer>>> check_map = Method.loadFile(new File(filelist.get(i)), null, this.dev);
                 File tempfile=new File(filelist.get(i));
                 String filename=tempfile.getName();
-                String tempstr=filename.replace("_merge_temp.matrix","");
+                String tempstr=filename.replace(fileSuffix,"");
 
                 SearchFeildHash.put(tempstr, check_map);
+
                 AnalysisList.add(tempstr);
             }
         }else{
-            System.out.println("Less than two files, can not perform overlap analysis");
+            System.out.println("Less than two files, not need to perform overlap analysis");
         }
 
-        removeDuplicatesCircRNA rd=new removeDuplicatesCircRNA(filelist);
+        removeDuplicatesCircRNA rd=new removeDuplicatesCircRNA(filelist, fileSuffix);
         ArrayList<Bed6P> rmdupBedlist=rd.getOutBedList();
             for (Bed6P bed : rmdupBedlist){
                 //str= br.readLine();
@@ -69,7 +70,7 @@ public class RunCollapse {
             return false;
         }
 
-        String[] cols = record.split("-");
+        String[] cols = Method.parseCircRNAName(record);
         boolean comm_flag = false;
         if (check_map.containsKey(cols[0])) {
             IntervalTree<ArrayList<Integer>> bj = check_map.get(cols[0]);
@@ -154,10 +155,10 @@ public class RunCollapse {
 //        rc.writeOut();
 //    }
     public static void main(String[] args) {
-        RunCollapse rc=new RunCollapse("/Users/likelet/test/circPlie","_merge_temp.matrix", "/Users/likelet/test/circPlie/merge.matrix.txt");
+        RunCollapse rc=new RunCollapse("/Users/likelet/test/temp/circRNA","_circRNA.backsplice.bed", "/Users/likelet/test/temp/merge.matrix.txt");
         rc.process();
         rc.writeOut();
-        rc.writeBED("/Users/likelet/test/circPlie/merge.matrix.bed");
+        rc.writeBED("/Users/likelet/test/temp/circRNA/merge.matrix.bed");
     }
 
 

@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+import PublicMethod.Method;
 
 
 /**
@@ -98,7 +99,7 @@ public class Multifile2matrix {
             fw.append("id\tchr\tchromStart\tchromEnd\t");
             
             String headerstr="";
-            
+
             for (Iterator it = filelist.iterator(); it.hasNext();) {
                 String tempstr = (String) it.next();
                 tempstr=new File(tempstr).getName();
@@ -111,7 +112,7 @@ public class Multifile2matrix {
             for (Iterator it1 = allIterm.iterator(); it1.hasNext();) {
                 String rowstr = (String) it1.next();
                 String tempstr2="";
-                outstr=rowstr.split("_");
+                outstr=Method.parseCircRNAName(rowstr);
                 // in case that the circleid have no stand information
                 if(correct_1base){
                     tempstr2= rowstr+"\t"+outstr[0]+"\t"+(Integer.parseInt(outstr[1])-1)+"\t"+outstr[2];

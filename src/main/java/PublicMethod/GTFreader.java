@@ -68,7 +68,7 @@ public class GTFreader {
     }
 
     public static void main(String[] args) {
-        GTFreader.readGTF("/Users/likelet/IdeaProjects/TMPDIR/hg19_chr2.gencode.annotation.gtf");
+        GTFreader.readGTF("/Users/likelet/IdeaProjects/test/hg19_chr2.gencode.annotation.gtf");
     }
 
 }

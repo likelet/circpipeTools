@@ -25,7 +25,7 @@ public class OverLapTerm {
     }
 
     public OverLapTerm(String chr, int start, int end, ArrayList<String> a,Bed6P bed) {
-        this.ID=chr+"-"+start+"-"+end;
+        this.ID=chr+":"+start+"|"+end;
         this.chr = chr;
         this.start = start;
         this.end = end;
